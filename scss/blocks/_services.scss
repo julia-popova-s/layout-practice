@@ -1,23 +1,25 @@
 .services {
   padding-top: 68px;
-  padding-bottom: 68px;
+  padding-bottom: 103px;
+  background-color: $grey;
 
 
   .h2 {
     text-align: center;
     @include titleFont;
-    padding-bottom: 43px;
+    padding-bottom: 48px;
   }
 
   &-block {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     .services-item {
-      //width: calc(50% - 20px);
       max-width: 595px;
       height: 268px;
-      margin: 5px;
+      margin-bottom: 10px;
+      
       @include fontSetContent();
 
       &-head {
@@ -37,19 +39,10 @@
 
       .text {
         width: 60%;
-        padding-top: 30px;
-        padding-left: 52px;
+        margin-top: 30px;
+        margin-left: 52px;
       }
     }
-  }
-}
-
-.services {
-  background-color: $grey;
-
-  &-block {
-    margin-left: $offset;
-    margin-right: $offset;
   }
 }
 
