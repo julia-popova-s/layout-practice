@@ -3,5 +3,24 @@ $blue: #3B3A63;
 $white: #FEFEFE;
 $black: #000000;
 $font-stack: "Roboto", Arial, Helvetica, sans-serif;
+$dark-blue: #2F2F51;
+$grey: #F2F2F2;
+$offset: -5px;
+
+@mixin fontSetContent(){
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $dark-blue; 
+}
+
+@mixin titleFont{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: $dark-blue;
+}
 
 @import './blocks/header';
+@import './blocks/services';

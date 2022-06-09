@@ -1,15 +1,15 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: $font-stack;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-family: $font-stack;  
+  @include fontSetContent();
   color: $black;
 }
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .head {
