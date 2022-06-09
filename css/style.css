@@ -81,7 +81,8 @@ body {
 
 .services {
   padding-top: 68px;
-  padding-bottom: 68px;
+  padding-bottom: 103px;
+  background-color: #F2F2F2;
 }
 
 .services .h2 {
@@ -90,7 +91,7 @@ body {
   line-height: 28px;
   font-weight: 700;
   color: #2F2F51;
-  padding-bottom: 43px;
+  padding-bottom: 48px;
 }
 
 .services-block {
@@ -99,12 +100,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .services-block .services-item {
   max-width: 595px;
   height: 268px;
-  margin: 5px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -136,17 +140,8 @@ body {
 
 .services-block .services-item .text {
   width: 60%;
-  padding-top: 30px;
-  padding-left: 52px;
-}
-
-.services {
-  background-color: #F2F2F2;
-}
-
-.services-block {
-  margin-left: -5px;
-  margin-right: -5px;
+  margin-top: 30px;
+  margin-left: 52px;
 }
 
 .windows,
