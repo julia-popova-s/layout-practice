@@ -16,41 +16,40 @@
   <header class="head">
     <div class="container">
       <div class="head-block">
-        <img class="head-block-logo" src="./img/header/logo.png" alt="Окна Хаус">
+        <img class="logo" src="./img/header/logo.png" alt="Окна Хаус">
 
-        <nav class="head-block-nav">
-          <ul class="nav-menu">
-            <li class="nav-menu-link">
-              <a href="#services">Услуги</a>
+        <nav class="navigation">
+          <ul class="navigation__menu">
+            <li class="navigation__menu-item">
+              <a class="navigation__menu-link" href="#services">Услуги</a>
             </li>
-            <li class="nav-menu-link">
-              <div class="backlight"></div>
-              <a class="link-color" href="#">Продукция</a>
+            <li class="navigation__menu-item">
+              <a class="navigation__menu-link" href="#">Продукция</a>
             </li>
-            <li class="nav-menu-link">
-              <a href="#">О компании</a>
+            <li class="navigation__menu-item">
+              <a class="navigation__menu-link" href="#">О компании</a>
             </li>
-            <li class="nav-menu-link">
-              <a href="#">Портфолио</a>
+            <li class="navigation__menu-item">
+              <a class="navigation__menu-link" href="#">Портфолио</a>
             </li>
-            <li class="nav-menu-link">
-              <a href="#">Вопрос-ответ</a>
+            <li class="navigation__menu-item">
+              <a class="navigation__menu-link" href="#">Вопрос-ответ</a>
             </li>
-            <li class="nav-menu-link">
-              <a href="#">Контакты</a>
+            <li class="navigation__menu-item">
+              <a class="navigation__menu-link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <div class="head-block-buttons">
-          <button class="buttons buttons-measure">
-            <img src="./img/header/measure.svg" alt="Замер">
-            <span class="title">Заявка на замер</span>
+        <div class="buttons-block">
+          <button class="button-measure">
+            <img class="button__icon" src="./img/header/measure.svg" alt="Замер">
+            <span class="button__title">Заявка на замер</span>
           </button>
 
-          <button class="buttons buttons-count">
-            <img src="./img/header/count.svg" alt="Расчет">
-            <span class="title">Заказать расчет</span>
+          <button class="button-measure button-measure_blue">
+            <img class="button-icon" src="./img/header/count.svg" alt="Расчет">
+            <span class="button__title">Заказать расчет</span>
           </button>
         </div>
 
@@ -61,57 +60,60 @@
     <!-- h1 в другом блоке будет -->
     <section class="services">
       <div class="container">
-        <h2 class="h2"><a id="services" class="h2">Наши услуги</a></h2>
-        <div class="services-block">
+        <h2 class="title-sections">
+          <a class="title-sections__link" id="services">Наши услуги</a>
+        </h2>
 
-          <div class="services-item windows">
-            <div class="services-item-head">
-              <img class="icon" src="./img/services/window.svg" alt="Окна">
-              <h3 class="label">Установка пластиковых окон</h3>
+        <div class="services-list">
+
+          <div class="card__item card__item_windows">
+            <div class="card__header">
+              <img class="card__header-icon" src="./img/services/window.svg" alt="Окна">
+              <h3 class="card__header-label">Установка пластиковых окон</h3>
             </div>
-            <p class="text">
+            <p class="card__text">
               Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества
             </p>
           </div>
 
-          <div class="services-item balcony">
-            <div class="services-item-head">
-              <img class="icon" src="./img/services/balcony.svg" alt="Балконы">
-              <h3 class="label">Остекление балконов и лоджий</h3>
+          <div class="card__item card__item_balcony">
+            <div class="card__header">
+              <img class="card__header-icon" src="./img/services/balcony.svg" alt="Балконы">
+              <h3 class="card__header-label">Остекление балконов и лоджий</h3>
             </div>
 
-            <p class="text">
+            <p class="card__text">
               Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и
               крыш. Беремся за сложные объекты
             </p>
           </div>
 
-          <div class="services-item houses">
-            <div class="services-item-head">
-              <img class="icon" src="./img/services/house.svg" alt="Коттеджи">
-              <h3 class="label">Остекление коттеджей и дач</h3>
+          <div class="card__item card__item_houses">
+            <div class="card__header">
+              <img class="card__header-icon" src="./img/services/house.svg" alt="Коттеджи">
+              <h3 class="card__header-label">Остекление коттеджей и дач</h3>
             </div>
-            <p class="text">
+            <p class="card__text">
               Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного
               технолога под каждый объект
             </p>
           </div>
 
-          <div class="services-item corporate">
-            <div class="services-item-head">
-              <img class="icon" src="./img/services/corporate.svg" alt="Корпоративный объект">
-              <h3 class="label">
+          <div class="card__item card__item_corporate">
+            <div class="card__header">
+              <img class="card__header-icon" src="./img/services/corporate.svg" alt="Корпоративный объект">
+              <h3 class="card__header-label">
                 Остекление корпоративных объектов
               </h3>
             </div>
-            <p class="text">
+            <p class="card__text">
               Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов
             </p>
           </div>
         </div>
       </div>
     </section>
-    
+
   </main>
 </body>
 

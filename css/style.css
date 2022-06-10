@@ -31,52 +31,49 @@ body {
           justify-content: space-between;
 }
 
-.head-block .nav-menu {
+.head .navigation__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.head-block .nav-menu .backlight {
-  background-color: #EF7F04;
-  height: 4px;
-  position: relative;
-  bottom: 37px;
+.head .navigation__menu-item {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.head-block .nav-menu-link {
-  margin: auto 20px;
-}
-
-.head-block .nav-menu-link .link-color {
+.head .navigation__menu-link:hover {
   color: #EF7F04;
+  padding-top: 37px;
+  border-top: #EF7F04 solid 4px;
 }
 
-.head .buttons {
+.head .button-measure {
+  padding: 10px;
+  background-color: #EF7F04;
   color: #FEFEFE;
   border-radius: 3px;
   text-align: center;
   width: 169px;
   height: 40px;
+  margin-right: 14px;
 }
 
-.head .buttons-measure {
-  background-color: #EF7F04;
-}
-
-.head .buttons-count {
+.head .button-measure_blue {
   background-color: #3B3A63;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 0;
   width: 172px;
-  margin-left: 14px;
 }
 
-.head .buttons .title {
+.head .button__title {
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;
-  margin-left: 13px;
+  padding-left: 13px;
 }
 
 .services {
@@ -85,16 +82,19 @@ body {
   background-color: #F2F2F2;
 }
 
-.services .h2 {
+.services .title-sections {
   text-align: center;
+  padding-bottom: 48px;
+}
+
+.services .title-sections__link {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #2F2F51;
-  padding-bottom: 48px;
 }
 
-.services-block {
+.services-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,10 +105,7 @@ body {
           justify-content: space-between;
 }
 
-.services-block .services-item {
-  max-width: 595px;
-  height: 268px;
-  margin-bottom: 10px;
+.services-list .card {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -116,7 +113,31 @@ body {
   color: #2F2F51;
 }
 
-.services-block .services-item-head {
+.services-list .card__item {
+  max-width: calc(100% / 2 - 5px);
+  height: 268px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  padding: 55px 0 38px 50px;
+}
+
+.services-list .card__item_windows {
+  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/windows.png);
+}
+
+.services-list .card__item_balcony {
+  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/balcony.png);
+}
+
+.services-list .card__item_houses {
+  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/houses.png);
+}
+
+.services-list .card__item_corporate {
+  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/corporate.png);
+}
+
+.services-list .card__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,46 +145,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 55px;
-  padding-left: 50px;
+  margin-bottom: 25px;
 }
 
-.services-block .services-item-head .label {
-  padding-left: 21px;
+.services-list .card__header-label {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #2F2F51;
   text-align: left;
-  padding-bottom: 0;
+  padding-left: 20px;
 }
 
-.services-block .services-item .text {
+.services-list .card__text {
   width: 60%;
-  margin-top: 30px;
-  margin-left: 52px;
-}
-
-.windows,
-.balcony,
-.houses,
-.corporate {
-  border-radius: 3px;
-}
-
-.windows {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/windows.png);
-}
-
-.balcony {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/balcony.png);
-}
-
-.houses {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/houses.png);
-}
-
-.corporate {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/corporate.png);
 }
 /*# sourceMappingURL=style.css.map */

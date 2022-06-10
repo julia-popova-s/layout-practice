@@ -3,68 +3,63 @@
   padding-bottom: 103px;
   background-color: $grey;
 
-
-  .h2 {
+  .title-sections {
     text-align: center;
-    @include titleFont;
     padding-bottom: 48px;
+
+    &__link {
+      @include titleFont();
+    }
   }
 
-  &-block {
+  &-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .services-item {
-      max-width: 595px;
-      height: 268px;
-      margin-bottom: 10px;
-      
+    .card {
       @include fontSetContent();
 
-      &-head {
-        display: flex;
-        width: 60%;
-        align-items: center;
-        padding-top: 55px;
-        padding-left: 50px;
+      &__item {
+        max-width: calc(100% / 2 - 5px);
+        height: 268px;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        padding: 55px 0 38px 50px;
 
-        .label {
-          padding-left: 21px;
-          @include titleFont;
-          text-align: left;
-          padding-bottom: 0;
+        &_windows {
+          background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/windows.png);
+        }
+
+        &_balcony {
+          background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/balcony.png);
+        }
+
+        &_houses {
+          background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/houses.png);
+        }
+
+        &_corporate {
+          background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/corporate.png);
         }
       }
 
-      .text {
+      &__header {
+        display: flex;
         width: 60%;
-        margin-top: 30px;
-        margin-left: 52px;
+        align-items: center;
+        margin-bottom: 25px;
+
+        &-label {
+          @include titleFont;
+          text-align: left;
+          padding-left: 20px;
+        }
+      }
+
+      &__text {
+        width: 60%;
       }
     }
   }
-}
-
-.windows,
-.balcony,
-.houses,
-.corporate {
-  border-radius: 3px;
-}
-
-.windows {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/windows.png);
-}
-
-.balcony {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/balcony.png);
-}
-
-.houses {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/houses.png);
-}
-
-.corporate {
-  background-image: linear-gradient(90.45deg, #FFFFFF 47.56%, rgba(255, 255, 255, 0) 98.81%), url(/img/services/corporate.png);
 }
