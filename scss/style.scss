@@ -7,19 +7,34 @@ $dark-blue: #2F2F51;
 $grey: #F2F2F2;
 
 
-@mixin fontSetContent(){
+@mixin fontSetContent() {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: $dark-blue; 
+  color: $dark-blue;
 }
 
-@mixin titleFont{
+@mixin titleFont {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: $dark-blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  @include fontSetContent();
+  color: $black;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 @import './blocks/header';

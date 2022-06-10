@@ -31,28 +31,32 @@ body {
           justify-content: space-between;
 }
 
-.head-block .nav-menu {
+.head .navigation__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.head-block .nav-menu .backlight {
+.head .navigation__menu-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.head .navigation__menu-link_backlight {
   background-color: #EF7F04;
-  height: 4px;
+  height: 5px;
   position: relative;
   bottom: 37px;
+  margin-top: -5px;
 }
 
-.head-block .nav-menu-link {
-  margin: auto 20px;
-}
-
-.head-block .nav-menu-link .link-color {
+.head .navigation__menu-link_link-orange {
   color: #EF7F04;
 }
 
-.head .buttons {
+.head .button {
   color: #FEFEFE;
   border-radius: 3px;
   text-align: center;
@@ -60,11 +64,11 @@ body {
   height: 40px;
 }
 
-.head .buttons-measure {
+.head .button_measure {
   background-color: #EF7F04;
 }
 
-.head .buttons-count {
+.head .button_count {
   background-color: #3B3A63;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -72,7 +76,7 @@ body {
   margin-left: 14px;
 }
 
-.head .buttons .title {
+.head .button__title {
   font-weight: 700;
   font-size: 13px;
   line-height: 15px;

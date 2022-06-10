@@ -1,17 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: $font-stack;  
-  @include fontSetContent();
-  color: $black;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
 .head {
 
   &-block {
@@ -19,21 +5,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
 
-    .nav-menu {
+  .navigation {
+
+    &__menu {
       display: flex;
+      flex-wrap: wrap;
 
-      .backlight {
-        background-color: $orange;
-        height: 4px;
-        position: relative;
-        bottom: 37px;
+      &-item {
+        margin-left: 20px;
+        margin-right: 20px;
       }
 
       &-link {
-        margin: auto 20px;
 
-        .link-color {
+        &_backlight {
+          background-color: $orange;
+          height: 5px;
+          position: relative;
+          bottom: 37px;
+          margin-top: -5px;
+        }
+
+        &_link-orange {
           color: $orange;
         }
       }
@@ -41,25 +36,25 @@ body {
   }
 
 
-  .buttons {
+  .button {
     color: $white;
     border-radius: 3px;
     text-align: center;
     width: 169px;
     height: 40px;
 
-    &-measure {
+    &_measure {
       background-color: $orange;
     }
 
-    &-count {
+    &_count {
       background-color: $blue;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       width: 172px;
       margin-left: 14px;
     }
 
-    .title {
+    &__title {
       font-weight: 700;
       font-size: 13px;
       line-height: 15px;
