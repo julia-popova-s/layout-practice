@@ -1,4 +1,9 @@
 .head {
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   &-block {
     height: 98px;
@@ -12,6 +17,7 @@
     &__menu {
       display: flex;
       flex-wrap: wrap;
+      height: 100%;
 
       &-item {
         margin-left: 20px;
@@ -21,9 +27,9 @@
       &-link {
 
         &:hover {
-          color: $orange;
+          color: $color-primary;
           padding-top: 37px;
-          border-top: $orange solid 4px;
+          border-top: $color-primary solid 4px;
         }
       }
     }
@@ -34,28 +40,28 @@
 
     &-measure {
       padding: 10px;
-      background-color: $orange;
+      background-color: $color-primary;
       color: $white;
-      border-radius: 3px;
+      border-radius: $border-rad;
       text-align: center;
       width: 169px;
       height: 40px;
-      margin-right: 14px;
-
-
-      &_blue {
-        background-color: $blue;
+      
+      &:hover{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        margin-right: 0;
-        width: 172px;
+      }
+
+      &_color {
+        background-color: $color-btn;
       }
     }
 
     &__title {
-      font-weight: 700;
-      font-size: 13px;
-      line-height: 15px;
-      padding-left: 13px;
+      @include fontSetContent(700, 13px, 15px, $white);
+    }
+
+    &s__item{
+      margin: 5px 0 5px 14px;
     }
   }
 }
