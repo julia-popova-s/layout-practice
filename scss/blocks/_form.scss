@@ -1,7 +1,7 @@
 .form {
   background-image: url(/img/order-form/mans.jpg);
   background-repeat: no-repeat;
-  margin-top: 98px;
+
 
   &-block {
     max-width: 1050px;
@@ -14,90 +14,94 @@
     &__guarantee {
       margin-right: 52px;
     }
-
-    &__label {
-      @include fontSetContent(700, 24px, 28px, $color-primary);
-      margin-bottom: 18px;
-
-      &_big-size {
-        @include fontSetContent(100, 36px, 42px, $white);
-      }
-    }
   }
+}
 
-  .guarantee {
+.form__block {
+  margin-top: 100px;
+}
+
+.main-slogan {
+  @include fontSetContent(700, 24px, 28px, $color-primary);
+  margin-bottom: 18px;
+
+  &_size_big {
+    @include fontSetContent(100, 36px, 42px, $white);
+  }
+}
+
+.guarantee {
+  &__list {
     display: flex;
     justify-content: space-between;
+  }
 
-    &__item {
-      width: calc(100% / 3 - 19px);
-    }
+  &__item {
+    width: calc(100% / 3 - 27px);
+  }
 
-    &__icon {
-      margin-bottom: 20px;
+  &__icon {
+    margin-bottom: 20px;
 
-      &_position {
-        margin-left: -20px;
-      }
-    }
-
-    &__text {
-      @include fontSetContent(400, 14px, 18px, $white);
+    &_position {
+      margin-left: -20px;
     }
   }
 
-  .order-form {
-    width: 406px;
-    height: 428px;
-    background-color: $white;
-    border-radius: 2 * $border-rad;
-    text-align: center;
+  &__text {
+    @include fontSetContent(400, 14px, 18px, $white);
+  }
+}
 
-    &__title {
-      padding: 43px 0 27px 0;
-      @include fontSetContent(700, 18px, 21px, $color-text);
-    }
+.order-form {
+  width: 406px;
+  height: 428px;
+  background-color: $white;
+  border-radius: 2 * $border-rad;
+  text-align: center;
 
-    &__input {
-      width: 323px;
-      height: 40px;
-      padding: 12px 0 12px 16px;
-      margin-bottom: 15px;
-      border-radius: $border-rad;
-      border: 1px solid #E2E2E2;
-      background-color: #E2E2E2;
-      @include fontSetContent(400, 14px, 16px, $color-input);
+  &__title {
+    padding: 43px 0 27px 0;
+    @include fontSetContent(700, 18px, 21px, $color-text);
+  }
 
-      &:focus {
-        border: 2px solid #8a8a8a;
-      }
-    }
+  &__input {
+    width: 323px;
+    height: 40px;
+    padding: 12px 0 12px 16px;
+    margin-bottom: 15px;
+    border-radius: $border-rad;
+    background-color: #E2E2E2;
+    @include fontSetContent(400, 14px, 16px, $color-input);
+  }
 
-    .checkbox {
-      width: 323px;
-      margin: 0 auto;
+  &__btn {
+    background-color: $color-primary;
+    width: 199px;
+    height: 55px;
+    border-radius: $border-rad;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    @include fontSetContent(700, 14px, 16px, $white);
+    cursor: pointer;
+  }
 
-      &__label {
-        @include fontSetContent(400, 12px, 14px, $black);
-      }
+  &__img {
+    margin-left: -5px;
+    margin-top: -14px;
+  }
+}
 
-      &__link {
-        color: #4B67AF;
-      }
-    }
+.checkbox {
+  width: 323px;
+  margin: 0 auto;
 
-    &__btn {
-      background-color: $color-primary;
-      padding: 18px 39px;
-      border-radius: $border-rad;
-      margin-top: 24px;
-      margin-bottom: 15px;
-      @include fontSetContent(700, 14px, 16px, $white);
-    }
+  &__label {
+    @include fontSetContent(400, 12px, 14px, $black);
+  }
 
-    &__img {
-      margin-left: -5px;
-      margin-top: -14px;
-    }
+  &__link {
+    color: $color-link;
   }
 }

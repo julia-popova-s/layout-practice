@@ -11,57 +11,60 @@
     align-items: center;
     justify-content: space-between;
   }
+}
 
-  .navigation {
+.header__nav {
+  margin-left: 44px;
+  margin-right: 60px;
+}
 
-    &__menu {
-      display: flex;
-      flex-wrap: wrap;
-      height: 100%;
+.navigation {
+  width: 100%;
 
-      &-item {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
 
-      &-link {
+    &-link {
 
-        &:hover {
-          color: $color-primary;
-          padding-top: 37px;
-          border-top: $color-primary solid 4px;
-        }
+      &:hover {
+        color: $color-primary;
+        padding-top: 37px;
+        border-top: $color-primary solid 4px;
       }
     }
   }
+}
 
+.button-group {
+  display: flex;
+  gap: 14px;
+}
 
-  .button {
+.button {
 
-    &-measure {
-      padding: 10px;
-      background-color: $color-primary;
-      color: $white;
-      border-radius: $border-rad;
-      text-align: center;
-      width: 169px;
-      height: 40px;
-      
-      &:hover{
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
+  padding: 10px;
+  background-color: $color-primary;
+  color: $white;
+  border-radius: $border-rad;
+  text-align: center;
+  width: 169px;
+  height: 40px;
+  cursor: pointer;
 
-      &_color {
-        background-color: $color-btn;
-      }
-    }
+  &_hover:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
-    &__title {
-      @include fontSetContent(700, 13px, 15px, $white);
-    }
+  &_color {
+    background-color: $color-btn;
+  }
 
-    &s__item{
-      margin: 5px 0 5px 14px;
-    }
+  &__title {
+    padding-left: 10px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    @include fontSetContent(700, 13px, 15px, $white);
   }
 }
