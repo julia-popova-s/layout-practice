@@ -1,0 +1,107 @@
+.form {
+  background-image: url(/img/order-form/mans.jpg);
+  background-repeat: no-repeat;
+
+
+  &-block {
+    max-width: 1050px;
+    height: 562px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__guarantee {
+      margin-right: 52px;
+    }
+  }
+}
+
+.form__block {
+  margin-top: 100px;
+}
+
+.main-slogan {
+  @include fontSetContent(700, 24px, 28px, $color-primary);
+  margin-bottom: 18px;
+
+  &_size_big {
+    @include fontSetContent(100, 36px, 42px, $white);
+  }
+}
+
+.guarantee {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc(100% / 3 - 27px);
+  }
+
+  &__icon {
+    margin-bottom: 20px;
+
+    &_position {
+      margin-left: -20px;
+    }
+  }
+
+  &__text {
+    @include fontSetContent(400, 14px, 18px, $white);
+  }
+}
+
+.order-form {
+  width: 406px;
+  height: 428px;
+  background-color: $white;
+  border-radius: 2 * $border-rad;
+  text-align: center;
+
+  &__title {
+    padding: 43px 0 27px 0;
+    @include fontSetContent(700, 18px, 21px, $color-text);
+  }
+
+  &__input {
+    width: 323px;
+    height: 40px;
+    padding: 12px 0 12px 16px;
+    margin-bottom: 15px;
+    border-radius: $border-rad;
+    background-color: #E2E2E2;
+    @include fontSetContent(400, 14px, 16px, $color-input);
+  }
+
+  &__btn {
+    background-color: $color-primary;
+    width: 199px;
+    height: 55px;
+    border-radius: $border-rad;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    @include fontSetContent(700, 14px, 16px, $white);
+    cursor: pointer;
+  }
+
+  &__img {
+    margin-left: -5px;
+    margin-top: -14px;
+  }
+}
+
+.checkbox {
+  width: 323px;
+  margin: 0 auto;
+
+  &__label {
+    @include fontSetContent(400, 12px, 14px, $black);
+  }
+
+  &__link {
+    color: $color-link;
+  }
+}
