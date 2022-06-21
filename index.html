@@ -57,157 +57,159 @@
       </div>
     </div>
   </header>
-  <main>
-    <section class="form">
-      <div class="container">
-        <div class="form-block form__block">
 
-          <div class="guarantee form-block__guarantee">
-            <h1 class="main-slogan">Окна Хаус - <p class="main-slogan_size_big">Профессиональный подход к
-                остеклению</p>
-            </h1>
-            <div class="guarantee__list">
-              <div class="guarantee__item">
-                <img class="guarantee__icon guarantee__icon_position" src="./img/order-form/modern.svg"
-                  alt="Современные окна">
-                <p class="guarantee__text">Современные окна и балконные конструкции по доступным ценам</p>
-              </div>
-              <div class="guarantee__item">
-                <img class="guarantee__icon" src="./img/order-form/qualified.svg" alt="Квалифицированный подход">
-                <p class="guarantee__text">Квалифицированный подход к решению задач любой сложности</p>
-              </div>
-              <div class="guarantee__item">
-                <img class="guarantee__icon" src="./img/order-form/guarantee.svg" alt="Гарантия">
-                <p class="guarantee__text">Гарантия высочайшего качества нашей продукции</p>
-              </div>
+  <main class="main">
+    <div class="container">
+      <div class="main-block main__block">
+
+        <div class="guarantee main-block__guarantee">
+          <h1 class="main-slogan">Окна Хаус - <p class="main-slogan_size_big">Профессиональный подход к
+              остеклению</p>
+          </h1>
+          <div class="guarantee__list">
+            <div class="guarantee__item">
+              <img class="guarantee__icon guarantee__icon_position" src="./img/main-block/modern.svg"
+                alt="Современные окна">
+              <p class="guarantee__text">Современные окна и балконные конструкции по доступным ценам</p>
+            </div>
+            <div class="guarantee__item">
+              <img class="guarantee__icon" src="./img/main-block/qualified.svg" alt="Квалифицированный подход">
+              <p class="guarantee__text">Квалифицированный подход к решению задач любой сложности</p>
+            </div>
+            <div class="guarantee__item">
+              <img class="guarantee__icon" src="./img/main-block/guarantee.svg" alt="Гарантия">
+              <p class="guarantee__text">Гарантия высочайшего качества нашей продукции</p>
             </div>
           </div>
+        </div>
 
-          <form class="order-form" id="data">
+        <form class="order-form main-block__order" id="data">
+          <div class="order-form__inner">
             <h2 class="order-form__title">Вызвать замерщика на дом</h2>
-            <p><input class="order-form__input" placeholder="Представьтесь, пожалуйста" name="user"></p>
-            <p><input class="order-form__input" placeholder="Номер телефона" name="tel"></p>
-            <p><input class="order-form__input" placeholder="E-mail" name="e-mail"></p>
+            <input type="text" class="order-form__input" placeholder="Представьтесь, пожалуйста" name="user">
+            <input type="text" class="order-form__input" placeholder="Номер телефона" name="tel">
+            <input type="text" class="order-form__input" placeholder="E-mail" name="e-mail">
+
 
             <div class="checkbox">
-              <input class="checkbox__mark" type="checkbox" id="checkbox_1" name="privacy" value="yes">
+              <input type="checkbox" class="checkbox__mark" id="checkbox_1" name="privacy">
 
               <label class="checkbox__label" for="checkbox_1">
                 Согласен на обработку персональных данных в соответствии с <a class="checkbox__link" href="#">политикой
                   конфиденциальности</a>
               </label>
             </div>
+          </div>
+          <button class="order-form__btn" type="submit" form="data">Отправить заявку</button>
+          <img class="order-form__img" src="./img/main-block/rule.png" alt="Сантиметровая лента">
+        </form>
+      </div>
+    </div>
+  </main>
 
-            <p><button class="order-form__btn" type="submit" form="data">Отправить заявку</button></p>
-            <img class="order-form__img" src="./img/order-form/rule.png" alt="Сантиметровая лента">
-          </form>
+  <section class="services">
+    <div class="container">
+      <h2 class="title-sections">
+        <a class="title-sections__link" id="services">Наши услуги</a>
+      </h2>
+
+      <div class="services-list">
+
+        <div class="card__item card__item_windows">
+          <div class="card__header">
+            <img class="card__header-icon" src="./img/services/window.svg" alt="Окна">
+            <h3 class="card__header-label">Установка пластиковых окон</h3>
+          </div>
+          <p class="card__text">
+            Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества
+          </p>
+        </div>
+
+        <div class="card__item card__item_balcony">
+          <div class="card__header">
+            <img class="card__header-icon" src="./img/services/balcony.svg" alt="Балконы">
+            <h3 class="card__header-label">Остекление балконов и лоджий</h3>
+          </div>
+
+          <p class="card__text">
+            Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и
+            крыш. Беремся за сложные объекты
+          </p>
+        </div>
+
+        <div class="card__item card__item_houses">
+          <div class="card__header">
+            <img class="card__header-icon" src="./img/services/house.svg" alt="Коттеджи">
+            <h3 class="card__header-label">Остекление коттеджей и дач</h3>
+          </div>
+          <p class="card__text">
+            Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного
+            технолога под каждый объект
+          </p>
+        </div>
+
+        <div class="card__item card__item_corporate">
+          <div class="card__header">
+            <img class="card__header-icon" src="./img/services/corporate.svg" alt="Корпоративный объект">
+            <h3 class="card__header-label">
+              Остекление корпоративных объектов
+            </h3>
+          </div>
+          <p class="card__text">
+            Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="services">
-      <div class="container">
-        <h2 class="title-sections">
-          <a class="title-sections__link" id="services">Наши услуги</a>
-        </h2>
+  <section class="products">
+    <div class="container">
+      <h2 class="title-sections"><a class="title-sections__link" id="products">Продукция</a></h2>
 
-        <div class="services-list">
+      <ul class="products-menu products__menu">
+        <li class="products-menu__item"><a class="products-menu__link" href="#">Стандарт</a></li>
+        <li class="products-menu__item"><a class="products-menu__link" href="#">Бизнес</a></li>
+        <li class="products-menu__item"><a class="products-menu__link" href="#">Премиум</a></li>
+        <li class="products-menu__item"><a class="products-menu__link" href="#">Эксклюзив</a></li>
+      </ul>
 
-          <div class="card__item card__item_windows">
-            <div class="card__header">
-              <img class="card__header-icon" src="./img/services/window.svg" alt="Окна">
-              <h3 class="card__header-label">Установка пластиковых окон</h3>
-            </div>
-            <p class="card__text">
-              Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества
+      <div class="products-list products__block">
+        <div class="products-list__item">
+          <img class="products-list__item-picture" src="./img/products/renau.png" alt="Renau">
+        </div>
+        <div class="products-list__item">
+          <div class="products-list__item-text">
+            <h3 class="products-list__title">Rehau Blitz New</h3>
+            <p class="products-list__description ">
+              Сохраняют тепло в доме, защищают от шума и вписываются в любой интерьер. Практичный выбор
             </p>
-          </div>
+            <ul class="products-list__features">
+              <li class="products-list__features-item">Системная глубина
+                <span class="products-list__features-border"></span>
+                <span class="products-list__features-value">60/60 мм</span>
+              </li>
 
-          <div class="card__item card__item_balcony">
-            <div class="card__header">
-              <img class="card__header-icon" src="./img/services/balcony.svg" alt="Балконы">
-              <h3 class="card__header-label">Остекление балконов и лоджий</h3>
-            </div>
+              <li class="products-list__features-item">Ширина стеклопакета
+                <span class="products-list__features-border"></span>
+                <span class="products-list__features-value">24/31 мм</span>
+              </li>
 
-            <p class="card__text">
-              Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и
-              крыш. Беремся за сложные объекты
-            </p>
-          </div>
+              <li class="products-list__features-item"> Воздушные камеры
+                <span class="products-list__features-border"></span>
+                <span class="products-list__features-value">3</span>
+              </li>
 
-          <div class="card__item card__item_houses">
-            <div class="card__header">
-              <img class="card__header-icon" src="./img/services/house.svg" alt="Коттеджи">
-              <h3 class="card__header-label">Остекление коттеджей и дач</h3>
-            </div>
-            <p class="card__text">
-              Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного
-              технолога под каждый объект
-            </p>
-          </div>
-
-          <div class="card__item card__item_corporate">
-            <div class="card__header">
-              <img class="card__header-icon" src="./img/services/corporate.svg" alt="Корпоративный объект">
-              <h3 class="card__header-label">
-                Остекление корпоративных объектов
-              </h3>
-            </div>
-            <p class="card__text">
-              Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов
-            </p>
+              <li class="products-list__features-item"> Теплосопротивление
+                <span class="products-list__features-border"></span>
+                <span class="products-list__features-value">0,70 м2С/ВТ</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="products">
-      <div class="container">
-        <h2 class="title-sections"><a class="title-sections__link" id="products">Продукция</a></h2>
-
-        <ul class="products-menu products__menu">
-          <li class="products-menu__item"><a class="products-menu__link" href="#">Стандарт</a></li>
-          <li class="products-menu__item"><a class="products-menu__link" href="#">Бизнес</a></li>
-          <li class="products-menu__item"><a class="products-menu__link" href="#">Премиум</a></li>
-          <li class="products-menu__item"><a class="products-menu__link" href="#">Эксклюзив</a></li>
-        </ul>
-
-        <div class="products-list products__block">
-          <div class="products-list__item">
-            <img class="products-list__item-picture" src="./img/products/renau.png" alt="Renau">
-          </div>
-          <div class="products-list__item">
-            <div class="products-list__item-text">
-              <h3 class="products-list__title">Rehau Blitz New</h3>
-              <p class="products-list__description ">
-                Сохраняют тепло в доме, защищают от шума и вписываются в любой интерьер. Практичный выбор
-              </p>
-              <ul class="products-list__features">
-                <li class="products-list__features-item">Системная глубина
-                  <span class="products-list__features-border"></span>
-                  <span class="products-list__features-value">60/60 мм</span>
-                </li>
-
-                <li class="products-list__features-item">Ширина стеклопакета
-                  <span class="products-list__features-border"></span>
-                  <span class="products-list__features-value">24/31 мм</span>
-                </li>
-
-                <li class="products-list__features-item"> Воздушные камеры
-                  <span class="products-list__features-border"></span>
-                  <span class="products-list__features-value">3</span>
-                </li>
-
-                <li class="products-list__features-item"> Теплосопротивление
-                  <span class="products-list__features-border"></span>
-                  <span class="products-list__features-value">0,70 м2С/ВТ</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
   </main>
 </body>
