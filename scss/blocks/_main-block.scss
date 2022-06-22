@@ -1,0 +1,157 @@
+.main {
+  background-image: url(/img/main-block/mans.jpg);
+  background-repeat: no-repeat;
+
+
+  &-block {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 69px 84px 65px 84px;
+
+    &__guarantee {
+      padding: 60px 52px 0 0;
+    }
+  }
+}
+
+.main__block {
+  margin-top: 100px;
+}
+
+.main-slogan {
+  @include fontSetContent(700, 24px, 28px, $color-primary);
+  margin-bottom: 18px;
+
+  &_size_big {
+    @include fontSetContent(100, 36px, 42px, $white);
+  }
+}
+
+.guarantee {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: calc(100% / 3 - 27px);
+  }
+
+  &__icon {
+    margin-bottom: 21px;
+
+    &_position {
+      margin-left: -14px;
+    }
+  }
+
+  &__text {
+    @include fontSetContent(400, 14px, 18px, $white);
+  }
+}
+
+.order-form {
+  width: 406px;
+  height: 428px;
+  background-color: $white;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+
+  &:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  &__inner {
+    padding: 43px 43px 24px 40px;
+  }
+
+
+  &__title {
+    margin-bottom: 27px;
+    @include fontSetContent(700, 18px, 21px, $color-text);
+  }
+
+  &__input {
+    width: 323px;
+    height: 40px;
+    padding-left: 16px;
+    margin-bottom: 15px;
+    border-radius: $border-rad;
+    background-color: $color-input;
+    @include fontSetContent(400, 14px, 16px, $color-text);
+
+    &::placeholder {
+      color: $color-text;
+    }
+  }
+
+  &__btn {
+    background-color: $color-primary;
+    width: 199px;
+    height: 55px;
+    border-radius: $border-rad;
+    margin-bottom: 65px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    @include fontSetContent(700, 14px, 16px, $white);
+  }
+
+  &__img {
+    position: absolute;
+    left: -88px;
+    bottom: -55px;
+  }
+}
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__mark {
+    opacity: 0;
+  }
+
+  &__label {
+    @include fontSetContent(400, 12px, 14px, $black);
+    text-align: left;
+    position: relative;
+    padding-left: 10px;
+
+    &::after,
+    &::before {
+      position: absolute;
+      display: inline-block;
+    }
+
+    &::before {
+      content: "";
+      height: 25px;
+      width: 25px;
+      background-color: $color-input;
+      border-radius: 3px;
+      top: 2px;
+      left: -24px;
+    }
+
+    &::after {
+      content: url(/img/main-block/vector.svg);
+      left: -20px;
+      top: 0;
+    }
+  }
+
+  &__link {
+    color: $color-link;
+  }
+}
+
+.checkbox input[type="checkbox"]+.checkbox__label::after {
+  content: none;
+}
+
+.checkbox input[type="checkbox"]:checked+.checkbox__label::after {
+  content: url(/img/main-block/vector.svg);
+}
