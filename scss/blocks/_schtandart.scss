@@ -1,11 +1,8 @@
-.schtandart {
-  margin-bottom: 50px;
-}
-
 .schtandart-block {
   background-image: url(/img/schtandart/bg-schtandart.png);
   background-repeat: no-repeat;
   padding: 36px 0 71px 0;
+  margin-bottom: 56px;
 
   &__logo {
     text-align: center;
@@ -23,7 +20,7 @@
       flex-direction: column;
       flex-wrap: wrap;
       align-items: flex-start;
-      width: calc(20%);
+      width: 20%;
       height: auto;
       gap: 33px;
     }
@@ -47,5 +44,20 @@
       @include fontSetContent(400, 16px, 19px, $white);
       text-align: center;
     }
+  }
+}
+
+.schtandart-block {
+
+  &__btn {
+    display: block;
+    width: 256px;
+    height: 55px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include fontSetContent(700, 16px, 19px, $white);
+    padding-left: 22px;
   }
 }
