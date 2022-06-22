@@ -8,6 +8,8 @@
 
   &__item {
     width: 140px;
+    //фиксированный размер для правильного отображения при наведении
+    //без этого сдвигаются(скачут) ссылки при наведении
     text-align-last: right;
   }
 
@@ -40,13 +42,13 @@
     width: 50%;
 
     &-text {
-      padding: 74px 32px 52px 35px;
+      //padding: 74px 32px 52px 35px;
+      padding: 74px 32px 52px 30px;
     }
 
     &-picture {
-      width: 100%;
-      height: 461px;
-      //width: 567px;
+      // width: 100%;
+      // height:auto;
       border-radius: $border-rad;
     }
   }
