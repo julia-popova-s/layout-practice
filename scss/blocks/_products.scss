@@ -36,19 +36,20 @@
 .products-list {
   max-width: 1145px;
   display: flex; flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   background-color: $white;
   margin: 0 auto;
   border-radius: $border-rad;
 
   &__item {
-    width: 50%;
+    width: 49.5%;
 
     &-text {
-      padding: 74px 32px 52px 30px;
+      padding: 74px 32px 0 30px;
     }
 
     &-picture {
+      width: 100%;
       border-radius: $border-rad;
     }
   }
