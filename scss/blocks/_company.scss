@@ -1,7 +1,10 @@
 .about-company {
   padding-top: 95px;
+  margin-bottom: 68px;
 }
-
+.company-title{
+  padding-bottom: 40px;
+}
 .company-menu {
   width: 70%;
   margin-bottom: 35px;
@@ -9,12 +12,14 @@
 
 .company-description {
   max-width: 1200px;
+  justify-content: space-between;
 }
 
 .company-description__item {
+  width: 49.5%;
 
   &-left {
-    padding: 46px 46px 38px 50px;
+    padding: 46px 46px 0 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -27,11 +32,11 @@
 
   &-text {
     width: 57%;
-    
+
     @include fontSetContent(400, 16px, 22px, $black);
   }
 
   &-img {
-    padding-left: 1%;
+    width: 100%;
   }
 }
