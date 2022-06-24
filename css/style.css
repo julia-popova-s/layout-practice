@@ -422,7 +422,6 @@ body {
 .schtandart-block .schtandart-block__list {
   display: flex;
   justify-content: space-around;
-  gap: 33px;
 }
 .schtandart-block .schtandart-block__item {
   width: 20%;
