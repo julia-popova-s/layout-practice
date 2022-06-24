@@ -12,12 +12,13 @@
   .schtandart-block {
     &__list {
       display: flex;
-      justify-content: space-around;      
+      justify-content: space-around;
     }
 
     &__item {
-      width: 20%;
-      height: auto;text-align: center;
+      width: 17%;
+      height: auto;
+      text-align: center;
     }
 
     &__img {
@@ -28,7 +29,7 @@
 
     &__text {
       @include fontSetContent(400, 16px, 19px, $white);
-      
+
     }
   }
 }
