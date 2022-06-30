@@ -1,16 +1,28 @@
 .main {
-  background-image: url(/img/main-block/mans.jpg);
+  background-image: url('../img/main-block/mans.jpg');
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 
+  @media screen and (max-width: $max-width-m) {
+    background-image: url('../img/main-block/bg-screen-m.jpg');
+  }
 
   &-block {
     display: flex;
     justify-content: center;
     margin: 0 auto;
     padding: 69px 84px 65px 84px;
+    height: 562px;
 
     &__guarantee {
       padding: 60px 52px 0 0;
+    }
+
+    @media screen and (max-width: $max-width-xl) {
+      padding: 69px 84px 65px 21px;
+      justify-content: left;
+      width: 85%;
+      margin: 0;
     }
   }
 }
@@ -26,16 +38,22 @@
   &_size_big {
     @include fontSetContent(100, 36px, 42px, $white);
   }
+
+  &_pos {
+    display: block;
+  }
 }
 
 .guarantee {
   &__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 2%
   }
 
   &__item {
-    width: calc(100% / 3 - 27px);
+    width: 32%;
   }
 
   &__icon {
@@ -45,12 +63,11 @@
     &_position_left {
       margin-left: -14px;
     }
-
-
   }
 
   &__text {
     @include fontSetContent(400, 14px, 18px, $white);
+    padding-right: 10%;
   }
 }
 
@@ -106,6 +123,10 @@
     left: -88px;
     bottom: -55px;
   }
+
+  @media screen and (max-width: $max-width-xl) {
+    display: none;
+  }
 }
 
 .checkbox {
@@ -140,7 +161,7 @@
     }
 
     &::after {
-      content: url(/img/main-block/vector.svg);
+      content: url('../img/main-block/vector.svg');
       left: -20px;
       top: 0;
     }
@@ -156,5 +177,5 @@
 }
 
 .checkbox input[type="checkbox"]:checked+.checkbox__label::after {
-  content: url(/img/main-block/vector.svg);
+  content: url('../img/main-block/vector.svg');
 }

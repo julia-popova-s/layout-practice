@@ -8,10 +8,13 @@ $color-input: #424268;
 $color-link: #4B67AF;
 $border-rad: 3px;
 $color-dot: #BABABA;
-$color-input:#E2E2E2;
+$color-input: #E2E2E2;
+$max-width-m: 992px;
+$max-width-l: 1130px;
+$max-width-xl: 1250px;
 
 
-@mixin fontSetContent($weight, $size, $height, $color) {  
+@mixin fontSetContent($weight, $size, $height, $color) {
   font-weight: $weight;
   font-size: $size;
   line-height: $height;
