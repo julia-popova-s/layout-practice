@@ -17,7 +17,40 @@
   <header class="head">
     <div class="container">
       <div class="head-block">
+
         <img class="logo" src="./img/header/logo.png" alt="Окна Хаус">
+
+        <div class="tablet-menu head-block__burger">
+
+          <input type="checkbox" id="checkbox_2" class="tablet-menu__checkbox">
+          <label for="checkbox_2" class="tablet-menu__btn head-block__burger-label">
+            <div class="tablet-menu__icon"></div>
+          </label>
+
+          <img class="tablet-menu__logo" src="./img/header/logo.png" alt="Окна Хаус">
+          <nav class="navigation">
+            <ul class="navigation__menu">
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#services">Услуги</a>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#products">Продукция</a>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#about-company">О компании</a>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">Портфолио</a>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">Вопрос-ответ</a>
+              </li>
+              <li class="navigation__menu-item">
+                <a class="navigation__menu-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <nav class="navigation header__nav">
           <ul class="navigation__menu">
@@ -42,6 +75,7 @@
           </ul>
         </nav>
 
+
         <div class="button-group">
           <button class="button button_hover">
             <img class="button__icon" src="./img/header/measure.svg" alt="Замер">
@@ -63,8 +97,9 @@
       <div class="main-block main__block">
 
         <div class="guarantee main-block__guarantee">
-          <h1 class="main-slogan">Окна Хаус - <p class="main-slogan_size_big">Профессиональный подход к
-              остеклению</p>
+          <h1 class="main-slogan">Окна Хаус - <p class="main-slogan_size_big">Профессиональный подход <span
+                class="main-slogan_pos">к
+                остеклению</span></p>
           </h1>
           <div class="guarantee__list">
             <div class="guarantee__item">
@@ -109,7 +144,7 @@
 
   <section class="services">
     <div class="container">
-      <h2 class="title-sections">
+      <h2 class="title-sections services__title">
         <a class="title-sections__link" id="services">Наши услуги</a>
       </h2>
 
@@ -165,7 +200,7 @@
 
   <section class="products">
     <div class="container">
-      <h2 class="title-sections"><a class="title-sections__link" id="products">Продукция</a></h2>
+      <h2 class="title-sections products__title"><a class="title-sections__link" id="products">Продукция</a></h2>
 
       <ul class="products-menu products__menu">
         <li class="products-menu__item"><a class="products-menu__link" href="#">Стандарт</a></li>
@@ -175,8 +210,8 @@
       </ul>
 
       <div class="products-list products__block">
-        <div class="products-list__item">
-          <img class="products-list__item-picture" src="./img/products/renau.png" alt="Renau">
+        <div class="products-list__item products-list__item_picture">
+          <!-- <img class="products-list__item-picture" src="./img/products/renau.png" alt="Renau"> -->
         </div>
         <div class="products-list__item">
           <div class="products-list__item-text">
@@ -254,7 +289,7 @@
 
   <section class="about-company">
     <div class="container">
-      <h2 class="title-sections company-title"><a class="title-sections__link" id="about-company">О компании</h2>
+      <h2 class="title-sections about-company__title"><a class="title-sections__link" id="about-company">О компании</h2>
       <ul class="products-menu products__menu company-menu">
         <li class="products-menu__item"><a class="products-menu__link" href="#">Описание</a></li>
         <li class="products-menu__item"><a class="products-menu__link" href="#">Как мы работаем</a></li>
@@ -267,66 +302,79 @@
           <div class="company-description__item-left">
             <img class="company-description__item-logo" src="./img/about-company/logo_company.svg" alt="Логотип">
             <p class="company-description__item-text">
-              Мы помогаем клиентам подбирать решения, учитывая пожежелания к характеристикам окна и его стоимости. Окно
+              Мы помогаем клиентам подбирать решения, учитывая пожелания к характеристикам окна и его стоимости. Окно
               - это объект, которым Вы будете пользоваться много лет, поэтому для нас очень важно, чтобы Вы сделали
               правильный выбор.
             </p>
           </div>
         </div>
-        <div class="products-list__item company-description__item">
-          <img class="products-list__item-picture company-description__item-img" src="./img/about-company/worker.png"
-            alt="Рабочий">
+        <div class="products-list__item company-description__item company-description__item-img">
+          <!-- <img class="products-list__item-picture company-description__item-img" src="./img/about-company/worker.png"
+            alt="Рабочий"> -->
         </div>
       </div>
 
       <div class="advantages">
-        <div class="advantages-list">
-          <div class="advantages-list__item">
-            <img class="advantages-list__icon" src="./img/advantages/prof.svg" alt="Профессионализм">
-            <div class="advantages-list__text">
-              <div class="advantages-list__label">Профессионализм</div>
-              <p class="advantages-list__description">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
+        <div class="advantages-list advantages__list">
+
+          <div class="advantages-item">
+            <div class="advantages-item__icon">
+              <img class="advantages-item__img" src="./img/advantages/prof.svg" alt="Профессионализм">
+            </div>
+            <div class="advantages-item__text">
+              <div class="advantages-item__label">Профессионализм</div>
+              <p class="advantages-item__description">Бригада профессиональных мастеров по монтажу и обслуживанию</p>
             </div>
           </div>
 
-          <div class="advantages-list__item">
-            <img class="advantages-list__iconadvantages-list__icon_size" src="./img/advantages/pricing.svg"
-              alt="Ценообразование">
-            <div class="advantages-list__text">
-              <div class="advantages-list__label">Ценообразование</div>
-              <p class="advantages-list__description">Лучшие цены на рынке пластиковых окон</p>
+          <div class="advantages-item">
+            <div class="advantages-item__icon">
+              <img class="advantages-item__img advantages-item__img_size" src="./img/advantages/pricing.svg"
+                alt="Ценообразование">
+            </div>
+            <div class="advantages-item__text">
+              <div class="advantages-item__label">Ценообразование</div>
+              <p class="advantages-item__description">Лучшие цены на рынке пластиковых окон</p>
             </div>
           </div>
 
-          <div class="advantages-list__item">
-            <img class="advantages-list__icon" src="./img/advantages/contract.svg" alt="Мобильность">
-            <div class="advantages-list__text">
-              <div class="advantages-list__label">Мобильность</div>
-              <p class="advantages-list__description">Заключение договора на дому</p>
+          <div class="advantages-item">
+            <div class="advantages-item__icon">
+              <img class="advantages-item__img" src="./img/advantages/contract.svg" alt="Мобильность">
+            </div>
+            <div class="advantages-item__text">
+              <div class="advantages-item__label">Мобильность</div>
+              <p class="advantages-item__description">Заключение договора на дому</p>
             </div>
           </div>
 
-          <div class="advantages-list__item">
-            <img class="advantages-list__icon" src="./img/advantages/loyalty.svg" alt="Лояльность">
-            <div class="advantages-list__text">
-              <div class="advantages-list__label">Лояльность</div>
-              <p class="advantages-list__description">99% клиентов рекомендуют нас своим друзьям</p>
+          <div class="advantages-item">
+            <div class="advantages-item__icon">
+              <img class="advantages-item__img" src="./img/advantages/loyalty.svg" alt="Лояльность">
             </div>
-
-          </div>
-          <div class="advantages-list__item">
-            <img class="advantages-list__icon" src="./img/advantages/speed.svg" alt="Скорость">
-            <div class="advantages-list__text">
-              <div class="advantages-list__label">Скорость</div>
-              <p class="advantages-list__description">Короткие сроки установки изделий</p>
+            <div class="advantages-item__text">
+              <div class="advantages-item__label">Лояльность</div>
+              <p class="advantages-item__description">99% клиентов рекомендуют нас своим друзьям</p>
             </div>
           </div>
 
-          <div class="advantages-list__item">
-            <img class="advantages-list__icon" src="./img/advantages/quality.svg" alt="Служба качества">
-            <div class="advantages-list__text">
-              <div class="advantages-list__label">Служба качества</div>
-              <p class="advantages-list__description">Безупречное качество и контроль изделий ПВХ</p>
+          <div class="advantages-item">
+            <div class="advantages-item__icon">
+              <img class="advantages-item__img" src="./img/advantages/speed.svg" alt="Скорость">
+            </div>
+            <div class="advantages-item__text">
+              <div class="advantages-item__label">Скорость</div>
+              <p class="advantages-item__description">Короткие сроки установки изделий</p>
+            </div>
+          </div>
+
+          <div class="advantages-item">
+            <div class="advantages-item__icon">
+              <img class="advantages-item__img" src="./img/advantages/quality.svg" alt="Служба качества">
+            </div>
+            <div class="advantages-item__text">
+              <div class="advantages-item__label">Служба качества</div>
+              <p class="advantages-item__description">Безупречное качество и контроль изделий ПВХ</p>
             </div>
           </div>
         </div>
@@ -337,6 +385,7 @@
       </div>
     </div>
   </section>
+
 
 </body>
 
