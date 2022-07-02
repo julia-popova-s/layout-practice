@@ -47,17 +47,26 @@
 
   &__item {
     width: 49.5%;
+    // @media screen and (max-width: $max-width-m) {
+    //   width: 50%;
+    // }
 
     &-text {
       padding: 74px 0 52px 30px;
+
+      @media screen and (max-width: $max-width-m) {
+        padding: 74px 0 52px 0;
+      }
     }
 
     &_picture {
       background-image: url('../img/products/renau.png');
       background-repeat: no-repeat;
-      background-position: 41% 0;
       border-radius: $border-rad;
 
+      @media screen and (max-width: $max-width-m) {
+        background-image: url('../img/products/renau-screen-m.jpg');
+      }
     }
   }
 
@@ -89,6 +98,10 @@
       display: block;
       min-width: 30%;
       @include fontSetContent(700, 18px, 40px, $color-text);
+
+      @media screen and (max-width: $max-width-m) {
+        min-width: 26%;
+      }
     }
   }
 }

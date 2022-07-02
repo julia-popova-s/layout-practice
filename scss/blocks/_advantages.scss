@@ -1,11 +1,18 @@
 .advantages__list {
-  padding: 0 4%;
-
+  padding: 0 42px;
 
   @media screen and (max-width: $max-width-xl) {
-    padding: 0 8%;
+    padding: 0 86px;
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: $max-width-m) {
+    padding: 0 86px;
+    margin-bottom: 20px;
+  }
+
+
+
 }
 
 .advantages {
@@ -22,36 +29,35 @@
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 100px;
-    gap: 8%;
+    gap: 20px;
 
     @media screen and (max-width: $max-width-xl) {
       width: 47%;
       margin-bottom: 40px;
-      gap: 8%;
     }
 
     @media screen and (max-width: $max-width-m) {
-      gap: 10%;
+      width: 47%;
+      margin-bottom: 40px;
     }
 
     &__icon {
       width: 30%;
-      text-align: center;
+      text-align: right;
     }
 
     &__img {
-      height: 98px;
-      width: auto;
+      height: auto;
+      width: 87px;
 
       &_size {
         margin-left: -10px;
-        // width: 112px;
+        width: 112px;
         height: auto;
       }
     }
 
     &__text {
-      padding-right: 5%;
       width: 60%;
     }
 

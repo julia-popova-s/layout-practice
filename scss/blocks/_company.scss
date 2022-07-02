@@ -25,16 +25,28 @@
   @media screen and (max-width: $max-width-xl) {
     margin-bottom: 80px;
   }
+
+  @media screen and (max-width: $max-width-m) {
+    margin-bottom: 80px;
+  }
 }
 
 .company-description__item {
   width: 49.5%;
 
+  @media screen and (max-width: $max-width-m) {
+    width: 50%;
+  }
+
   &-left {
-    padding: 46px 46px 60px 50px;
+    padding: 46px 45px 0 51px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    @media screen and (max-width: $max-width-m) {
+      padding: 46px 52px 0px 28px;
+    }
   }
 
   &-logo {
@@ -43,13 +55,21 @@
   }
 
   &-text {
-    max-width: 305px;
+    width: 60%;
     @include fontSetContent(400, 16px, 22px, $black);
+
+    @media screen and (max-width: $max-width-m) {
+      width: 78%;
+    }
+
   }
 
   &-img {
     background-image: url('../img/about-company/worker.png');
     background-repeat: no-repeat;
-    background-position: 50% 0;
+
+    @media screen and (max-width: $max-width-m) {
+      background-image: url('../img/about-company/worker_2.png');
+    }
   }
 }
