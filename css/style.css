@@ -34,7 +34,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .head-block__burger-label {
     margin-right: 44px;
   }
@@ -59,9 +59,9 @@ body {
   padding-top: 37px;
   border-top: #EF7F04 solid 4px;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .navigation {
-    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -108,7 +108,7 @@ body {
 .tablet-menu .navigation__menu-item {
   margin-bottom: 15px;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu .navigation__menu-link:hover {
     color: #EF7F04;
     border: none;
@@ -117,16 +117,17 @@ body {
 .tablet-menu__checkbox {
   display: none;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu {
     display: flex;
     align-items: center;
+    height: 100%;
   }
 }
 .tablet-menu__btn {
   display: none;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__btn {
     position: relative;
     display: flex;
@@ -141,7 +142,7 @@ body {
 .tablet-menu__icon {
   display: none;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__icon {
     display: block;
     position: relative;
@@ -153,7 +154,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__icon::after,
 .tablet-menu__icon::before {
     content: "";
@@ -167,52 +168,51 @@ body {
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__icon::after {
     top: 14px;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__icon::before {
     top: -14px;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__checkbox:checked ~ .navigation {
     transition: 0.4s;
-    opacity: 1;
+    visibility: visible;
     position: fixed;
     left: 56px;
     top: 97px;
-    border-radius: 6px;
+    border-radius: 0 0 6px 6px;
     padding: 20px 0 20px 25px;
-    border-top: none;
-    background-image: linear-gradient(90.45deg, #F2F2F2 47.56%, rgba(255, 255, 255, 0) 98.81%), url("../img/services/corporate.png");
+    background-image: linear-gradient(90.45deg, #F2F2F2 47.56%, rgba(255, 255, 255, 0) 98.81%);
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon {
     background: transparent;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon::before,
 .tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon::after {
     top: 0;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon::after {
     transform: rotate(-45deg);
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon::before {
     transform: rotate(45deg);
   }
@@ -221,13 +221,13 @@ body {
 .tablet-menu__logo {
   display: none;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .tablet-menu__logo {
     display: block;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .logo {
     display: none;
   }
@@ -253,7 +253,7 @@ body {
 .main-block__guarantee {
   padding: 60px 52px 0 0;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 992px) {
   .main-block {
     padding: 69px 84px 65px 21px;
     justify-content: left;
@@ -372,6 +372,11 @@ body {
     display: none;
   }
 }
+@media screen and (max-width: 992px) {
+  .order-form {
+    display: none;
+  }
+}
 
 .checkbox {
   display: flex;
@@ -473,21 +478,21 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .card__item_windows {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url("../img/services/windows.png");
+  background-image: url("../img/services/windows.png");
 }
 .card__item_balcony {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url("../img/services/balcony.png");
+  background-image: url("../img/services/balcony.png");
   background-position: 54% 30%;
 }
 .card__item_houses {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url("../img/services/houses.png");
+  background-image: url("../img/services/houses.png");
 }
 .card__item_corporate {
-  background-image: linear-gradient(90.45deg, #ffffff 47.56%, rgba(255, 255, 255, 0) 98.81%), url("../img/services/corporate.png");
+  background-image: url("../img/services/corporate.png");
 }
 @media screen and (max-width: 992px) {
   .card__item {
-    width: 595px;
+    min-width: 67%;
     display: block;
     margin: 0 auto;
     margin-bottom: 38px;
@@ -563,11 +568,20 @@ body {
 .products-list__item-text {
   padding: 74px 0 52px 30px;
 }
+@media screen and (max-width: 992px) {
+  .products-list__item-text {
+    padding: 74px 0 52px 0;
+  }
+}
 .products-list__item_picture {
   background-image: url("../img/products/renau.png");
   background-repeat: no-repeat;
-  background-position: 41% 0;
   border-radius: 3px;
+}
+@media screen and (max-width: 992px) {
+  .products-list__item_picture {
+    background-image: url("../img/products/renau-screen-m.jpg");
+  }
 }
 .products-list__title {
   font-weight: 700;
@@ -603,6 +617,11 @@ body {
   font-size: 18px;
   line-height: 40px;
   color: #2F2F51;
+}
+@media screen and (max-width: 992px) {
+  .products-list__features-value {
+    min-width: 26%;
+  }
 }
 
 .products__block {
@@ -641,7 +660,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .schtandart-block__item {
-    width: 33%;
+    width: 27%;
   }
 }
 .schtandart-block__img {
@@ -704,39 +723,69 @@ body {
     margin-bottom: 80px;
   }
 }
+@media screen and (max-width: 992px) {
+  .company-description {
+    margin-bottom: 80px;
+  }
+}
 
 .company-description__item {
   width: 49.5%;
 }
+@media screen and (max-width: 992px) {
+  .company-description__item {
+    width: 50%;
+  }
+}
 .company-description__item-left {
-  padding: 46px 46px 60px 50px;
+  padding: 46px 45px 0 51px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .company-description__item-left {
+    padding: 46px 52px 0px 28px;
+  }
 }
 .company-description__item-logo {
   margin-bottom: 62px;
   align-self: flex-start;
 }
 .company-description__item-text {
-  max-width: 305px;
+  width: 60%;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #000000;
 }
+@media screen and (max-width: 992px) {
+  .company-description__item-text {
+    width: 78%;
+  }
+}
 .company-description__item-img {
   background-image: url("../img/about-company/worker.png");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+}
+@media screen and (max-width: 992px) {
+  .company-description__item-img {
+    background-image: url("../img/about-company/worker_2.png");
+  }
 }
 
 .advantages__list {
-  padding: 0 4%;
+  padding: 0 42px;
 }
 @media screen and (max-width: 1250px) {
   .advantages__list {
-    padding: 0 8%;
+    padding: 0 86px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .advantages__list {
+    padding: 0 86px;
     margin-bottom: 20px;
   }
 }
@@ -753,34 +802,34 @@ body {
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 100px;
-  gap: 8%;
+  gap: 20px;
 }
 @media screen and (max-width: 1250px) {
   .advantages-item {
     width: 47%;
     margin-bottom: 40px;
-    gap: 8%;
   }
 }
 @media screen and (max-width: 992px) {
   .advantages-item {
-    gap: 10%;
+    width: 47%;
+    margin-bottom: 40px;
   }
 }
 .advantages-item__icon {
   width: 30%;
-  text-align: center;
+  text-align: right;
 }
 .advantages-item__img {
-  height: 98px;
-  width: auto;
+  height: auto;
+  width: 87px;
 }
 .advantages-item__img_size {
   margin-left: -10px;
+  width: 112px;
   height: auto;
 }
 .advantages-item__text {
-  padding-right: 5%;
   width: 60%;
 }
 .advantages-item__label {

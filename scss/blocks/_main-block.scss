@@ -18,7 +18,7 @@
       padding: 60px 52px 0 0;
     }
 
-    @media screen and (max-width: $max-width-xl) {
+    @media screen and (max-width: $max-width-m) {
       padding: 69px 84px 65px 21px;
       justify-content: left;
       width: 85%;
@@ -125,6 +125,10 @@
   }
 
   @media screen and (max-width: $max-width-xl) {
+    display: none;
+  }
+
+  @media screen and (max-width: $max-width-m) {
     display: none;
   }
 }
