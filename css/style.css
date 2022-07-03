@@ -566,21 +566,22 @@ body {
   width: 49.5%;
 }
 .products-list__item-text {
-  padding: 74px 0 52px 30px;
+  padding: 74px 0 52px 35px;
 }
-@media screen and (max-width: 992px) {
-  .products-list__item-text {
-    padding: 74px 0 52px 0;
-  }
-}
-.products-list__item_picture {
+.products-list__item-left {
   background-image: url("../img/products/renau.png");
   background-repeat: no-repeat;
   border-radius: 3px;
 }
 @media screen and (max-width: 992px) {
-  .products-list__item_picture {
+  .products-list__item-left {
     background-image: url("../img/products/renau-screen-m.jpg");
+    width: 45.9%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .products-list__item-right {
+    width: 54.1%;
   }
 }
 .products-list__title {
