@@ -1,0 +1,33 @@
+.portfolio {
+  &-block {
+    background-color: $white;
+    padding: 40px 0 71px 0;
+    border-radius: $border-rad;
+
+    &__title {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+
+  &__img {
+    height: 214px;
+    width: 214px;
+
+    &:last-child {
+      @media screen and (max-width:$max-width-l) {
+        display: none;
+      }
+    }
+
+    &_hover:hover {
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    }
+  }
+}

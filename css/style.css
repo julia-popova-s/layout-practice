@@ -698,9 +698,10 @@ body {
   padding-top: 95px;
   margin-bottom: 87px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1130px) {
   .about-company {
     padding-top: 38px;
+    margin-bottom: 0;
   }
 }
 
@@ -860,4 +861,98 @@ body {
   line-height: 19px;
   color: #FEFEFE;
   padding-left: 24px;
+}
+
+.portfolio-block {
+  background-color: #FEFEFE;
+  padding: 40px 0 71px 0;
+  border-radius: 3px;
+}
+.portfolio-block__title {
+  margin-bottom: 48px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+}
+.portfolio-list__img {
+  height: 214px;
+  width: 214px;
+}
+@media screen and (max-width: 1130px) {
+  .portfolio-list__img:last-child {
+    display: none;
+  }
+}
+.portfolio-list__img_hover:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.question-list {
+  padding: 40px 101px 63px 101px;
+  background-color: #EF7F1A;
+  border-radius: 7px;
+}
+.question-list__title {
+  margin-bottom: 49px;
+  color: #FEFEFE;
+}
+.question-list__link {
+  color: #FEFEFE;
+}
+.question-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  margin-bottom: 14px;
+  border-radius: 3px;
+  padding: 31px 0 29px 19px;
+  background-color: #FEFEFE;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2F2F51;
+}
+.question-list__item:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.question-list__item[open] .question-list__question {
+  margin-bottom: 24px;
+}
+.question-list__item:last-child {
+  margin-bottom: 0;
+}
+.question-list__question {
+  cursor: pointer;
+}
+.question-list__question:hover {
+  color: #EF7F04;
+}
+
+.question-list__item {
+  position: relative;
+}
+.question-list__item .question-list__question::-webkit-details-marker {
+  display: none;
+}
+.question-list__item > .question-list__question {
+  list-style: none;
+}
+.question-list__item .question-list__question::after {
+  content: url("../img/qustion-answer/check-mark.svg");
+  position: absolute;
+  right: 30px;
+}
+.question-list__item .question-list__question:hover::after {
+  content: url("../img/qustion-answer/check-mark-3.svg");
+}
+.question-list__item[open] .question-list__question::after {
+  content: url("../img/qustion-answer/check-mark-2.svg");
+}
+.question-list__item[open] .question-list__question:hover::after {
+  content: url("../img/qustion-answer/check-mark-4.svg");
 }/*# sourceMappingURL=style.css.map */
