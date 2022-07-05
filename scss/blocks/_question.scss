@@ -28,15 +28,20 @@
     margin-bottom: 14px;
     border-radius: $border-rad;
     padding: 31px 0 29px 19px;
-    background-color: $white;
+    background-color: $color-details;
     @include fontSetContent(700, 18px, 21px, $color-text);
 
     &:hover {
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      background-color: $white;
     }
 
     &[open] .question-list__question {
       margin-bottom: 24px;
+    }
+
+    &[open] {
+      background-color: $white;
     }
 
     &:last-child {
@@ -56,29 +61,32 @@
 .question-list__item {
   position: relative;
 
-  .question-list__question::-webkit-details-marker {
-    display: none
-  }
+  .question-list {
+    &__question::-webkit-details-marker {
+      display: none
+    }
 
-  >.question-list__question {
-    list-style: none;
-  }
 
-  .question-list__question::after {
-    content: url('../img/qustion-answer/check-mark.svg');
-    position: absolute;
-    right: 30px;
-  }
+    &__question {
+      list-style: none;
+    }
 
-  .question-list__question:hover::after {
-    content: url('../img/qustion-answer/check-mark-3.svg');
-  }
+    &__question::after {
+      content: url('../img/qustion-answer/check-mark.svg');
+      position: absolute;
+      right: 30px;
+    }
 
-  &[open] .question-list__question::after {
-    content: url('../img/qustion-answer/check-mark-2.svg');
-  }
+    &__question:hover::after {
+      content: url('../img/qustion-answer/check-mark-3.svg');
+    }
 
-  &[open] .question-list__question:hover::after {
-    content: url('../img/qustion-answer/check-mark-4.svg');
+    &[open] .question-list__question::after {
+      content: url('../img/qustion-answer/check-mark-2.svg');
+    }
+
+    &[open] .question-list__question:hover::after {
+      content: url('../img/qustion-answer/check-mark-4.svg');
+    }
   }
 }
