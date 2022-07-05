@@ -2,8 +2,9 @@
   padding-top: 95px;
   margin-bottom: 87px;
 
-  @media screen and(max-width: $max-width-m) {
+  @media screen and(max-width: $max-width-l) {
     padding-top: 38px;
+    margin-bottom: 0;
   }
 }
 

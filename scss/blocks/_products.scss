@@ -76,9 +76,13 @@
   }
 
   &__description {
-    width: 95%;
+    width: 73%;
     @include fontSetContent(300, 18px, 21px, $black);
     margin-bottom: 30px;
+
+    @media screen and (max-width: $max-width-m) {
+      width: 95%;
+    }
   }
 
   &__features {
@@ -87,6 +91,7 @@
       display: flex;
       align-items: baseline;
       @include fontSetContent(400, 18px, 40px, $black);
+      white-space: nowrap;
     }
 
     &-border {
