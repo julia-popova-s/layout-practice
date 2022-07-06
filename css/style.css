@@ -559,10 +559,10 @@ body {
   background-color: #FEFEFE;
   margin: 0 auto;
   border-radius: 3px;
-  height: 461px;
 }
 .products-list__item {
   width: 49.5%;
+  max-height: 100%;
 }
 .products-list__item-text {
   padding: 74px 0 52px 35px;
@@ -741,6 +741,7 @@ body {
 
 .company-description__item {
   width: 49.5%;
+  max-height: 100%;
 }
 @media screen and (max-width: 992px) {
   .company-description__item {
@@ -748,14 +749,14 @@ body {
   }
 }
 .company-description__item-left {
-  padding: 46px 45px 0 51px;
+  padding: 46px 45px 60px 51px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media screen and (max-width: 992px) {
   .company-description__item-left {
-    padding: 46px 52px 0px 28px;
+    padding: 46px 52px 38px 28px;
   }
 }
 .company-description__item-logo {
@@ -763,7 +764,8 @@ body {
   align-self: flex-start;
 }
 .company-description__item-text {
-  width: 60%;
+  width: 305px;
+  margin-left: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -771,7 +773,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .company-description__item-text {
-    width: 78%;
+    width: 277px;
   }
 }
 .company-description__item-img {
