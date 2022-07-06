@@ -101,10 +101,10 @@
     margin-bottom: 15px;
     border-radius: $border-rad;
     background-color: $color-input;
-    @include fontSetContent(400, 14px, 16px, $color-text);
+    @include fontSetContent(400, 14px, 16px, $color-placeholder);
 
     &::placeholder {
-      color: $color-text;
+      color: $color-placeholder;
     }
   }
 

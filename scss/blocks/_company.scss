@@ -21,7 +21,7 @@
   max-width: 1200px;
   justify-content: space-between;
   margin-bottom: 68px;
- // height: 461px;
+  // height: 461px;
 
   @media screen and (max-width: $max-width-xl) {
     margin-bottom: 80px;
@@ -57,7 +57,7 @@
   }
 
   &-text {
-    width:305px;
+    width: 305px;
     margin-left: auto;
     @include fontSetContent(400, 16px, 22px, $black);
 
