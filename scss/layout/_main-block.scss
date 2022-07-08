@@ -1,0 +1,89 @@
+.main {
+  background-image: url('../img/main-block/mans.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media screen and (max-width: $max-width-m) {
+    background-image: url('../img/main-block/bg-screen-m.jpg');
+  }
+
+  &-block {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 69px 84px 65px 84px;
+    height: 562px;
+
+    &__guarantee {
+      padding: 60px 52px 0 0;
+    }
+
+    @media screen and (max-width: $max-width-m) {
+      padding: 69px 84px 65px 21px;
+      justify-content: left;
+      width: 85%;
+      margin: 0;
+    }
+  }
+}
+
+.main__block {
+  margin-top: 100px;
+}
+
+.main-slogan {
+  @include fontSetContent(700, 24px, 28px, $color-primary);
+  margin-bottom: 18px;
+
+  &_size_big {
+    @include fontSetContent(100, 36px, 42px, $white);
+  }
+
+  &_pos {
+    display: block;
+  }
+}
+
+.guarantee {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2%
+  }
+
+  &__item {
+    width: 32%;
+  }
+
+  &__icon {
+    height: 83px;
+    margin-bottom: 21px;
+
+    &_position_left {
+      margin-left: -14px;
+    }
+  }
+
+  &__text {
+    @include fontSetContent(400, 14px, 18px, $white);
+    padding-right: 10%;
+  }
+}
+
+.order-form {
+
+  &__img {
+    position: absolute;
+    left: -88px;
+    bottom: -55px;
+  }
+
+  @media screen and (max-width: $max-width-xl) {
+    display: none;
+  }
+
+  @media screen and (max-width: $max-width-m) {
+    display: none;
+  }
+}

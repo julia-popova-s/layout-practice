@@ -1,32 +1,22 @@
-@import './blocks/variables';
+//base
+@import './base/variables';
+@import './base/base';
+
+//components
+@import './components/checkbox';
+@import './components/button';
+@import './components/title-sections';
+@import './components/form';
 
 
-html {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  @include fontSetContent(400, 16px, 19px, $black);
-  background-color: $color-back;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1312px;
-  padding: 0 56px;
-}
-
-@import './blocks/header';
-@import './blocks/main-block';
-@import './blocks/services';
-@import './blocks/products';
-@import './blocks/schtandart';
-@import './blocks/company';
-@import './blocks/advantages';
-@import './blocks/portfolio';
-@import './blocks/question';
-@import './blocks/contacts';
+//layout
+@import './layout/header';
+@import './layout/main-block';
+@import './layout/services';
+@import './layout/products';
+@import './layout/schtandart';
+@import './layout/about-company';
+@import './layout/advantages';
+@import './layout/portfolio';
+@import './layout/question';
+@import './layout/contacts';
