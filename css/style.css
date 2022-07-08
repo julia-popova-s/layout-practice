@@ -1051,6 +1051,7 @@ body {
 .contacts-form {
   width: 512px;
   height: 564px;
+  margin-bottom: 26px;
 }
 .contacts-form__inner {
   padding: 55px 57px 0 60px;
@@ -1102,7 +1103,6 @@ body {
 @media screen and (max-width: 992px) {
   .contacts-form {
     display: block;
-    margin-bottom: 26px;
   }
 }
 
@@ -1180,4 +1180,30 @@ body {
 }
 .contact-list__email-link:hover {
   text-decoration: underline;
+}
+
+.footer {
+  background-color: #2F2F51;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 0 45px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FEFEFE;
+}
+.footer-box__logo {
+  margin-right: 22px;
+  padding-bottom: 10px;
+}
+.footer-box__links-item {
+  margin-left: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  color: #FEFEFE;
 }/*# sourceMappingURL=style.css.map */

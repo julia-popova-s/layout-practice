@@ -72,6 +72,7 @@
 
   width: 512px;
   height: 564px;
+  margin-bottom: 26px;
 
   &__inner {
     padding: 55px 57px 0 60px;
@@ -111,7 +112,6 @@
 
   @media screen and (max-width: $max-width-m) {
     display: block;
-    margin-bottom: 26px;
   }
 
 }

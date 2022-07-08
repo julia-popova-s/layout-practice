@@ -1,0 +1,21 @@
+.footer {
+  background-color: $color-text;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 0 45px 0;
+  @include fontSetContent(400, 16px, 20px, $white);
+
+  &__logo {
+    margin-right: 22px;
+    padding-bottom: 10px;
+  }
+
+  &__links-item {
+    margin-left: 25px;
+    @include fontSetContent(400, 14px, 36px, $white);
+  }
+}
