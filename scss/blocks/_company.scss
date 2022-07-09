@@ -7,20 +7,23 @@
   }
 }
 
-.about-company__title {
+.company__title {
   margin-bottom: 40px;
 }
 
-.company-menu {
-  width: 100%;
+.company__menu {
   margin-bottom: 35px;
 }
 
 .company-description {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   justify-content: space-between;
   margin-bottom: 68px;
- // height: 461px;
+  background-color: $white;
+  border-radius: $border-rad;
+
 
   @media screen and (max-width: $max-width-xl) {
     margin-bottom: 80px;
@@ -56,7 +59,7 @@
   }
 
   &-text {
-    width:305px;
+    width: 305px;
     margin-left: auto;
     @include fontSetContent(400, 16px, 22px, $black);
 

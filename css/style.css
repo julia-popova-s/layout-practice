@@ -524,7 +524,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 46%;
   margin: 0 auto;
 }
 .products-menu__item {
@@ -704,19 +703,22 @@ body {
   }
 }
 
-.about-company__title {
+.company__title {
   margin-bottom: 40px;
 }
 
-.company-menu {
-  width: 100%;
+.company__menu {
   margin-bottom: 35px;
 }
 
 .company-description {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   justify-content: space-between;
   margin-bottom: 68px;
+  background-color: #FEFEFE;
+  border-radius: 3px;
 }
 @media screen and (max-width: 1250px) {
   .company-description {
