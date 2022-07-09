@@ -8,20 +8,23 @@
   }
 }
 
-.about-company__title {
+.company__title {
   margin-bottom: 40px;
 }
 
-.company-menu {
-  width: 100%;
+.company__menu {
   margin-bottom: 35px;
 }
 
 .company-description {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1200px;
   justify-content: space-between;
   margin-bottom: 68px;
-  height: 461px;
+  background-color: $white;
+  border-radius: $border-rad;
+
 
   @media screen and (max-width: $max-width-xl) {
     margin-bottom: 80px;
@@ -34,19 +37,20 @@
 
 .company-description__item {
   width: 49.5%;
+  max-height: 100%;
 
   @media screen and (max-width: $max-width-m) {
     width: 50%;
   }
 
   &-left {
-    padding: 46px 45px 0 51px;
+    padding: 46px 45px 60px 51px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
     @media screen and (max-width: $max-width-m) {
-      padding: 46px 52px 0px 28px;
+      padding: 46px 52px 38px 28px;
     }
   }
 
@@ -56,11 +60,12 @@
   }
 
   &-text {
-    width: 60%;
+    width:305px;
+    margin-left: auto;
     @include fontSetContent(400, 16px, 22px, $black);
 
     @media screen and (max-width: $max-width-m) {
-      width: 78%;
+      width: 277px;
     }
 
   }
