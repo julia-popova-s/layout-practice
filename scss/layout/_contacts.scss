@@ -59,6 +59,10 @@
     z-index: 1;
     top: 0px;
     right: -15px;
+
+    @media screen and (max-width: $max-width-xl) {
+      z-index: -1;
+    }
   }
 }
 
@@ -66,6 +70,10 @@
   display: flex;
   align-items: flex-start;
   gap: 14px;
+}
+
+.link_shadow:hover {
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contacts-form {

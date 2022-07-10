@@ -45,3 +45,7 @@
     @include fontSetContent(700, 14px, 16px, $white);
   }
 }
+
+.input_border:focus {
+  border: 1px solid #bababa;
+}

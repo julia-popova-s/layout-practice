@@ -120,10 +120,11 @@
 
         <form class="order-form main-block__order" id="data">
           <div class="order-form__inner">
-            <h2 class="order-form__title">Вызвать замерщика на дом</h2>
-            <input type="text" class="order-form__input" placeholder="Представьтесь, пожалуйста" name="user">
-            <input type="text" class="order-form__input" placeholder="Номер телефона" name="tel">
-            <input type="text" class="order-form__input" placeholder="E-mail" name="e-mail">
+            <div class="order-form__title">Вызвать замерщика на дом</div>
+            <input type="text" class="order-form__input input_border" placeholder="Представьтесь, пожалуйста"
+              name="user">
+            <input type="text" class="order-form__input input_border" placeholder="Номер телефона" name="tel">
+            <input type="text" class="order-form__input input_border" placeholder="E-mail" name="e-mail">
 
 
             <div class="checkbox">
@@ -135,7 +136,7 @@
               </label>
             </div>
           </div>
-          <button class="order-form__btn" type="submit" form="data">Отправить заявку</button>
+          <button class="order-form__btn button_hover" type="submit" form="data">Отправить заявку</button>
           <img class="order-form__img" src="./img/main-block/rule.png" alt="Сантиметровая лента">
         </form>
       </div>
@@ -449,7 +450,7 @@
 
         <div class="contacts-block__left">
 
-          <h3 class="contacts-block__label">Бесплатная консультация:</h3>
+          <div class="contacts-block__label">Бесплатная консультация:</div>
           <div class="contacts-block__list contacts-list">
             <img class="contacts-list__icon" src="./img/contacts/phone.svg" alt="Телефон">
             <div class="contacts-list__phone">
@@ -475,22 +476,23 @@
                 подходят. Вы можете приобрести недорогие товары при гарантированно высоком качестве.
               </p>
               <div class="social-network contacts-block__slogan-icons">
-                <a class="social-network__link" href="https://www.vk.com/" target="_blank">
+                <a class="social-network__link link_shadow" href="https://www.vk.com/" target="_blank">
                   <img src="./img/contacts/vk.svg" alt="Вк" class="social-network__icon">
                 </a>
-                <a class="social-network__link" href="https://www.facebook.com/" target="_blank">
-                  <img src="./img/contacts/facebook.svg" alt="Facebook" class="social-network__icon">
+                <a class="social-network__link link_shadow" href="https://www.facebook.com/" target="_blank">
+                  <img src="./img/contacts/facebook.svg" alt="Facebook"
+                    class="social-network__icon social-network__icon_size">
                 </a>
-                <a class="social-network__link" href="https://www.instagram.com/" target="_blank">
+                <a class="social-network__link link_shadow" href="https://www.instagram.com/" target="_blank">
                   <img src="./img/contacts/instagram.svg" alt="Инстаграм" class="social-network__icon">
                 </a>
-                <a class="social-network__link" href="https://telegram.org/" target="_blank">
+                <a class="social-network__link link_shadow" href="https://telegram.org/" target="_blank">
                   <img src="./img/contacts/telegram.svg" alt="Телеграм" class="social-network__icon">
                 </a>
-                <a class="social-network__link" href="https://www.youtube.com/" target="_blank">
+                <a class="social-network__link link_shadow" href="https://www.youtube.com/" target="_blank">
                   <img src="./img/contacts/youtube.svg" alt="Youtube" class="social-network__icon">
                 </a>
-                <a class="social-network__link" href="https://ok.ru/" target="_blank">
+                <a class="social-network__link link_shadow" href="https://ok.ru/" target="_blank">
                   <img src="./img/contacts/ok.svg" alt="Одноклассники" class="social-network__icon">
                 </a>
               </div>
@@ -503,11 +505,13 @@
 
         <form class="order-form contacts-form contacts-block__form" id="feedback">
           <div class="order-form__inner contacts-form__inner">
-            <h2 class="order-form__title contacts-form__label">Остались вопросы?</h2>
-            <input type="text" class="order-form__input contacts-form__input" placeholder="Ваше имя" name="user">
+            <div class="order-form__title contacts-form__label">Остались вопросы?</div>
+            <input type="text" class="order-form__input contacts-form__input input_border" placeholder="Ваше имя"
+              name="user">
 
-            <input type="text" class="order-form__input contacts-form__input" placeholder="E-mail" name="e-mail">
-            <textarea class="order-form__input contacts-form__feedback" placeholder="Ваш отзыв"
+            <input type="text" class="order-form__input contacts-form__input input_border" placeholder="E-mail"
+              name="e-mail">
+            <textarea class="order-form__input contacts-form__feedback input_border" placeholder="Ваш отзыв"
               name="feedback"></textarea>
 
 
@@ -518,7 +522,7 @@
                 Я согласен(на) на обработку <a class="checkbox__link" href="#">персональных данных</a></label>
             </div>
           </div>
-          <button class="order-form__btn contacts-form__btn" type="submit" form="feedback">Отправить
+          <button class="order-form__btn contacts-form__btn button_hover" type="submit" form="feedback">Отправить
             сообщение</button>
         </form>
       </div>
