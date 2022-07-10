@@ -81,6 +81,7 @@ body {
 .button_hover:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   opacity: 0.8;
+  transition: 0.5s;
 }
 .button_color {
   background-color: #3B3A63;
@@ -115,6 +116,7 @@ body {
 }
 .order-form:hover {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
 }
 .order-form__inner {
   padding: 43px 43px 24px 40px;
@@ -483,6 +485,7 @@ body {
 }
 .card__item:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
 }
 .card__item_windows {
   background-image: url("../img/services/windows.png");
@@ -553,6 +556,7 @@ body {
   border-radius: 3px;
   color: #FEFEFE;
   text-shadow: 0 0 0.85px #fff, 0 0 0.85px #fff;
+  transition: 0.5s;
 }
 
 .products__menu {
@@ -900,6 +904,7 @@ body {
 }
 .portfolio-list__img_hover:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
 }
 
 .question-list {
@@ -943,6 +948,7 @@ body {
 .question-list__item:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   background-color: #FEFEFE;
+  transition: 0.5s;
 }
 .question-list__item[open] .question-list__question {
   margin-bottom: 24px;
@@ -958,6 +964,7 @@ body {
 }
 .question-list__question:hover {
   color: #EF7F04;
+  transition: 0.5s;
 }
 
 .question-list__item {
@@ -1061,6 +1068,7 @@ body {
 
 .link_shadow:hover {
   box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
 }
 
 .contacts-form {

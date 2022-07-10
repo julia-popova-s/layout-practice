@@ -36,6 +36,7 @@
     &:hover {
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
       background-color: $white;
+      transition: 0.5s;
     }
 
     &[open] .question-list__question {
@@ -56,6 +57,7 @@
 
     &:hover {
       color: $color-primary;
+      transition: 0.5s;
     }
   }
 }
