@@ -32,6 +32,7 @@
     padding: 31px 0 29px 19px;
     background-color: $color-details;
     @include fontSetContent(700, 18px, 21px, $color-text);
+    transition: 0.4s;
 
     &:hover {
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -40,6 +41,7 @@
 
     &[open] .question-list__question {
       margin-bottom: 24px;
+      transition: 0.4s;
     }
 
     &[open] {
@@ -53,6 +55,7 @@
 
   &__question {
     cursor: pointer;
+    transition: 0.4s;
 
     &:hover {
       color: $color-primary;
@@ -62,33 +65,42 @@
 
 .question-list__item {
   position: relative;
+}
 
-  .question-list {
-    &__question::-webkit-details-marker {
-      display: none
-    }
+.question-list {
+  &__question::-webkit-details-marker {
+    display: none
+  }
 
+  &__question {
+    list-style: none;
+  }
 
-    &__question {
-      list-style: none;
-    }
+  &__question::after {
+    content: '';
+    width: 19px;
+    height: 19px;
+    border-left: 2px solid $color-text;
+    border-bottom: 2px solid $color-text;
+    position: absolute;
+    right: 30px;
+    top: 24px;
+    transform: rotate(-45deg);
+    transition: 0.4s;
+  }
 
-    &__question::after {
-      content: url('../img/qustion-answer/check-mark.svg');
-      position: absolute;
-      right: 30px;
-    }
+  &__question:hover::after {
+    border-left: 2px solid $color-primary;
+    border-bottom: 2px solid $color-primary;
+  }
 
-    &__question:hover::after {
-      content: url('../img/qustion-answer/check-mark-3.svg');
-    }
+  &__item[open] .question-list__question::after {
+    transform: rotate(135deg);
+    top: 37px;
+  }
 
-    &[open] .question-list__question::after {
-      content: url('../img/qustion-answer/check-mark-2.svg');
-    }
-
-    &[open] .question-list__question:hover::after {
-      content: url('../img/qustion-answer/check-mark-4.svg');
-    }
+  &__item[open] .question-list__question:hover::after {
+    transform: rotate(135deg);
+    top: 37px;
   }
 }
