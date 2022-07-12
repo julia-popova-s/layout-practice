@@ -980,15 +980,21 @@ body {
   content: url("../img/qustion-answer/check-mark.svg");
   position: absolute;
   right: 30px;
+  transition: 0.5s;
 }
 .question-list__item .question-list__question:hover::after {
-  content: url("../img/qustion-answer/check-mark-3.svg");
-}
-.question-list__item .question-list[open] .question-list__question::after {
   content: url("../img/qustion-answer/check-mark-2.svg");
 }
-.question-list__item .question-list[open] .question-list__question:hover::after {
-  content: url("../img/qustion-answer/check-mark-4.svg");
+.question-list__item[open] .question-list__question::after, .question-list__item[open] .question-list__question:hover::after {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-out;
+  top: 27px;
+}
+.question-list__item[open] .question-list__question::after {
+  content: url("../img/qustion-answer/check-mark.svg");
+}
+.question-list__item[open] .question-list__question:hover::after {
+  content: url("../img/qustion-answer/check-mark-2.svg");
 }
 
 .contacts__title {

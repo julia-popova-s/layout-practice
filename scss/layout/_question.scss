@@ -67,9 +67,8 @@
 
   .question-list {
     &__question::-webkit-details-marker {
-      display: none
+      display: none;
     }
-
 
     &__question {
       list-style: none;
@@ -79,18 +78,26 @@
       content: url('../img/qustion-answer/check-mark.svg');
       position: absolute;
       right: 30px;
+      transition: 0.5s;
     }
 
     &__question:hover::after {
-      content: url('../img/qustion-answer/check-mark-3.svg');
-    }
-
-    &[open] .question-list__question::after {
       content: url('../img/qustion-answer/check-mark-2.svg');
     }
+  }
 
-    &[open] .question-list__question:hover::after {
-      content: url('../img/qustion-answer/check-mark-4.svg');
-    }
+  &[open] .question-list__question::after,
+  &[open] .question-list__question:hover::after {
+    transform: rotate(180deg);
+    transition: transform .5s ease-out;
+    top: 27px;
+  }
+
+  &[open] .question-list__question::after {
+    content: url('../img/qustion-answer/check-mark.svg');
+  }
+
+  &[open] .question-list__question:hover::after {
+    content: url('../img/qustion-answer/check-mark-2.svg');
   }
 }
