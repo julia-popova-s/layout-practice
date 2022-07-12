@@ -940,22 +940,20 @@ body {
   vertical-align: middle;
   margin-bottom: 14px;
   border-radius: 3px;
-  padding: 31px 0 29px 19px;
+  padding: 32px 0 30px 19px;
   background-color: #EEEEF3;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   color: #2F2F51;
-  transition: 0.4s;
+  transition: all 0.5s ease-out;
 }
 .question-list__item:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   background-color: #FEFEFE;
-  transition: 0.5s;
 }
 .question-list__item[open] .question-list__question {
   margin-bottom: 24px;
-  transition: 0.4s;
 }
 .question-list__item[open] {
   background-color: #FEFEFE;
@@ -965,46 +963,39 @@ body {
 }
 .question-list__question {
   cursor: pointer;
-  transition: 0.4s;
+  transition: all 0.5s ease-out;
 }
 .question-list__question:hover {
   color: #EF7F04;
-  transition: 0.5s;
 }
 
 .question-list__item {
   position: relative;
 }
-
 .question-list__question::-webkit-details-marker {
   display: none;
 }
 .question-list__question {
   list-style: none;
 }
-.question-list__question::after {
-  content: "";
-  width: 19px;
-  height: 19px;
-  border-left: 2px solid #2F2F51;
-  border-bottom: 2px solid #2F2F51;
+.question-list__question-icon {
   position: absolute;
   right: 30px;
-  top: 24px;
-  transform: rotate(-45deg);
-  transition: 0.4s;
+  transition: all 0.5s ease-out;
 }
-.question-list__question:hover::after {
-  border-left: 2px solid #EF7F04;
-  border-bottom: 2px solid #EF7F04;
+.question-list__question-path {
+  transition: all 0.5s ease-out;
 }
-.question-list__item[open] .question-list__question::after {
-  transform: rotate(135deg);
-  top: 37px;
+.question-list__question:hover .question-list__question-icon .question-list__question-path {
+  stroke: #EF7F04;
 }
-.question-list__item[open] .question-list__question:hover::after {
-  transform: rotate(135deg);
-  top: 37px;
+
+.question-list__item {
+  transition: all 0.5s ease-out;
+}
+.question-list__item[open] .question-list__question-icon {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  transition: all 0.5s ease-out;
 }
 
 .contacts__title {
