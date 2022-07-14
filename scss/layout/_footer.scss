@@ -17,9 +17,12 @@
   &__links-item {
     margin-left: 25px;
     @include fontSetContent(400, 14px, 36px, $white);
+    text-decoration: underline transparent;
+    transition: text-decoration $delay-04 linear;
 
     &:hover {
       text-decoration: underline;
+      transition: text-decoration $delay-04 linear;
     }
   }
 }

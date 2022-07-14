@@ -25,6 +25,7 @@
 
   &-item {
     display: flex;
+    flex-wrap: wrap;
     width: 30%;
     align-items: flex-start;
     justify-content: center;
@@ -42,8 +43,7 @@
     }
 
     &__icon {
-
-      width: 30%;
+      min-width: 100px;
       text-align: right;
     }
 
