@@ -59,10 +59,6 @@
     z-index: 1;
     top: 0px;
     right: -15px;
-
-    @media screen and (max-width: $max-width-xl) {
-      z-index: -1;
-    }
   }
 }
 
@@ -72,9 +68,13 @@
   gap: 14px;
 }
 
-.link_shadow:hover {
-  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
-  transition: 0.5s;
+.link_shadow {
+  transition: box-shadow $delay-05 linear;
+
+  &:hover {
+    box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow $delay-05 linear;
+  }
 }
 
 .contacts-form {
@@ -144,6 +144,13 @@
   .checkbox__link {
     font-weight: 700;
     color: $color-primary;
+    text-decoration: underline transparent;
+    transition: text-decoration $delay-03 ease-out;
+
+    &:hover {
+      text-decoration: underline;
+      transition: text-decoration $delay-03 ease-out;
+    }
   }
 }
 
@@ -161,39 +168,55 @@
 }
 
 .contacts-list {
+  max-width: 552px;
   display: grid;
-  grid-template: 81px 38px 22px / 52px 460px;
   align-items: start;
   grid-auto-rows: auto;
+  grid-template-columns: 52px 2fr 2fr;
+  grid-template-rows: 81px 38px 22px;
 
   &__icon {
     height: auto;
   }
 
+  &__phone,
+  &__phone:hover,
+  &__address,
+  &__address:hover,
+  &__email,
+  &__email:hover {
+    transition: text-decoration $delay-03 ease-out;
+  }
+
+  &__phone,
+  &__address,
+  &__email {
+    text-decoration: underline transparent;
+  }
+
   &__phone {
     @include fontSetContent(700, 22px, 36px, $black);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
 
-    &-item:hover {
+    &:hover {
       text-decoration: underline;
     }
   }
 
   &__address {
     @include fontSetContent(400, 18px, 21px, $black);
+    grid-column-start: 2;
+    grid-column-end: 4;
 
     &:hover {
       text-decoration: underline;
     }
   }
-}
 
-.contact-list__email-link {
-  @include fontSetContent(400, 18px, 21px, $black);
+  &__email {
+    @include fontSetContent(400, 18px, 21px, $black);
 
-  &:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

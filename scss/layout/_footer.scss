@@ -17,9 +17,9 @@
   &__links-item {
     margin-left: 25px;
     @include fontSetContent(400, 14px, 36px, $white);
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
-      color: #bababa;
     }
   }
 }

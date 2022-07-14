@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  gap: 5px;
 
   &__item {
     text-align-last: center;
@@ -15,17 +16,18 @@
 
   &__link {
     padding: 8px 26px 10px 26px;
+    background-color: transparent;
+    border-radius: $border-rad;
     @include fontSetContent(400, 18px, 21px, $color-text);
     letter-spacing: normal;
-    transition: text-shadow .1s;
-
+    transition: text-shadow $delay-04 ease-out, background-color $delay-04 ease-out;
 
     &:hover {
       background-color: $color-primary;
       border-radius: $border-rad;
       color: $white;
       text-shadow: 0 0 .85px #fff, 0 0 .85px #fff;
-      transition: 0.5s;
+      transition: text-shadow $delay-04 ease-out, background-color $delay-04 ease-out;
     }
   }
 }

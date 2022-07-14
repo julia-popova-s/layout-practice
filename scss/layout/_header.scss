@@ -1,7 +1,7 @@
 .head {
   background-color: $white;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,10 +36,15 @@
 
     &-link {
 
+      border-top: transparent solid 4px;
+      padding-top: 37px;
+      transition: color $delay-03 linear, border-top $delay-03 linear;
+
       &:hover {
         color: $color-primary;
         padding-top: 37px;
         border-top: $color-primary solid 4px;
+        transition: color $delay-03 linear, border-top $delay-03 linear;
       }
     }
   }
@@ -69,10 +74,16 @@
         margin-bottom: 15px;
       }
 
+      &-link {
+        font-size: 16px;
+        transition: color $delay-03 linear;
+      }
+
       &-link:hover {
         @media screen and (max-width: $max-width-m) {
           color: $color-primary;
           border: none;
+          transition: color $delay-03 linear;
         }
       }
     }
@@ -150,11 +161,11 @@
     transition: .4s;
     visibility: visible;
     position: fixed;
-    left: 56px;
+    left: 55px;
     top: 97px;
     border-radius: 0 0 $border-rad * 2 $border-rad * 2;
     padding: 20px 0 20px 25px;
-    background-image: linear-gradient(90.45deg, #F2F2F2 47.56%, rgba(255, 255, 255, 0) 98.81%);
+    background-image: linear-gradient(90deg, #F2F2F2 47.56%, rgba(255, 255, 255, 0) 98.81%);
   }
 }
 
