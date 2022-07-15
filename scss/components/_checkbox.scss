@@ -42,10 +42,10 @@
   }
 }
 
-.checkbox input[type="checkbox"]+.checkbox__label::after {
+.checkbox .checkbox__mark+.checkbox__label::after {
   content: none;
 }
 
-.checkbox input[type="checkbox"]:checked+.checkbox__label::after {
+.checkbox .checkbox__mark:checked+.checkbox__label::after {
   content: url('../img/main-block/vector.svg');
 }

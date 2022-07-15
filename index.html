@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+  <title>Окна Хаус - Профессиональный подход к остекленению</title>
 </head>
 
 <body>
@@ -22,37 +22,37 @@
 
         <div class="tablet-menu head-block__burger">
 
-          <input type="checkbox" id="checkbox_menu" class="tablet-menu__checkbox">
-          <label for="checkbox_menu" class="tablet-menu__btn head-block__burger-label">
+          <input type="checkbox" id="checkbox-menu" class="tablet-menu__checkbox">
+          <label for="checkbox-menu" class="tablet-menu__btn head-block__burger-label">
             <div class="tablet-menu__icon"></div>
           </label>
 
           <img class="tablet-menu__logo" src="./img/header/logo.png" alt="Окна Хаус">
-          <nav class="navigation">
-            <ul class="navigation__menu">
-              <li class="navigation__menu-item">
-                <a class="navigation__menu-link" href="#services">Услуги</a>
+          <nav class="tablet-menu__nav">
+            <ul class="tablet-menu__list">
+              <li class="tablet-menu__item">
+                <a class="tablet-menu__link" href="#services">Услуги</a>
               </li>
-              <li class="navigation__menu-item">
-                <a class="navigation__menu-link" href="#products">Продукция</a>
+              <li class="tablet-menu__item">
+                <a class="tablet-menu__link" href="#products">Продукция</a>
               </li>
-              <li class="navigation__menu-item">
-                <a class="navigation__menu-link" href="#about-company">О компании</a>
+              <li class="tablet-menu__item">
+                <a class="tablet-menu__link" href="#about-company">О компании</a>
               </li>
-              <li class="navigation__menu-item">
-                <a class="navigation__menu-link" href="#portfolio">Портфолио</a>
+              <li class="tablet-menu__item">
+                <a class="tablet-menu__link" href="#portfolio">Портфолио</a>
               </li>
-              <li class="navigation__menu-item">
-                <a class="navigation__menu-link" href="#question-answer">Вопрос-ответ</a>
+              <li class="tablet-menu__item">
+                <a class="tablet-menu__link" href="#question-answer">Вопрос-ответ</a>
               </li>
-              <li class="navigation__menu-item">
-                <a class="navigation__menu-link" href="#contacts">Контакты</a>
+              <li class="tablet-menu__item">
+                <a class="tablet-menu__link" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <nav class="navigation header__nav">
+        <nav class="navigation">
           <ul class="navigation__menu">
             <li class="navigation__menu-item">
               <a class="navigation__menu-link" href="#services">Услуги</a>
@@ -128,9 +128,9 @@
 
 
             <div class="checkbox">
-              <input type="checkbox" class="checkbox__mark" id="checkbox_order" name="privacy">
+              <input type="checkbox" class="checkbox__mark" id="checkbox-order" name="privacy">
 
-              <label class="checkbox__label" for="checkbox_order">
+              <label class="checkbox__label" for="checkbox-order">
                 Согласен на обработку персональных данных в соответствии с <a class="checkbox__link" href="#">политикой
                   конфиденциальности</a>
               </label>
@@ -212,7 +212,6 @@
 
       <div class="products-list products__block">
         <div class="products-list__item products-list__item-left">
-          <!-- <img class="products-list__item-picture" src="./img/products/renau.png" alt="Renau"> -->
         </div>
         <div class="products-list__item  products-list__item-right">
           <div class="products-list__item-text">
@@ -402,34 +401,72 @@
 
       <div class="question-list">
         <h2 class="title-sections question-list__title"><a class="title-sections__link question-list__link"
-            id="question-answer">Вопрос-ответ</h2>
+            id="question-answer">Вопрос-ответ</a></h2>
 
         <details class="question-list__item">
-          <summary class="question-list__question">Сколько по времени занимает изготовление пластиковых окон?</summary>
+          <summary class="question-list__question">Сколько по времени занимает изготовление пластиковых окон?
+            <svg class="question-list__question-icon" width="30" height="17" viewBox="0 0 30 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="question-list__question-path" d="M1 1.5L15 15.5L29 1.5" stroke="#2F2F51" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </summary>
           <p class="question-list__answer">Нет</p>
         </details>
         <details class="question-list__item">
-          <summary class="question-list__question">Какие существуют способы оплаты?</summary>
+          <summary class="question-list__question">Какие существуют способы оплаты?
+            <svg class="question-list__question-icon" width="30" height="17" viewBox="0 0 30 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="question-list__question-path" d="M1 1.5L15 15.5L29 1.5" stroke="#2F2F51" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </summary>
           <p class="question-list__answer">Нет</p>
         </details>
         <details class="question-list__item">
-          <summary class="question-list__question">Какие существуют способы оплаты?</summary>
+          <summary class="question-list__question">Где я могу посмотреть образцы?
+            <svg class="question-list__question-icon" width="30" height="17" viewBox="0 0 30 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="question-list__question-path" d="M1 1.5L15 15.5L29 1.5" stroke="#2F2F51" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </summary>
           <p class="question-list__answer">Нет</p>
         </details>
         <details class="question-list__item">
-          <summary class="question-list__question">Где я могу посмотреть образцы?</summary>
+          <summary class="question-list__question">Зачем вызывать замерщика? Я могу дать размеры
+            <svg class="question-list__question-icon" width="30" height="17" viewBox="0 0 30 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="question-list__question-path" d="M1 1.5L15 15.5L29 1.5" stroke="#2F2F51" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </summary>
           <p class="question-list__answer">Нет</p>
         </details>
         <details class="question-list__item">
-          <summary class="question-list__question">Зачем вызывать замерщика? Я могу дать размеры</summary>
-          <p class="question-list__answer">Нет</p>
-        </details>
-        <details class="question-list__item">
-          <summary class="question-list__question">Хотелось бы отделать балкон. Поможете?</summary>
+          <summary class="question-list__question">Хотелось бы отделать балкон. Поможете?
+            <svg class="question-list__question-icon" width="30" height="17" viewBox="0 0 30 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="question-list__question-path" d="M1 1.5L15 15.5L29 1.5" stroke="#2F2F51" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </summary>
           <p class="question-list__answer">Нет</p>
         </details>
         <details open="open" class="question-list__item">
-          <summary class="question-list__question">Мне надо нанимать грузчиков для подъема?</summary>
+          <summary class="question-list__question">Мне надо нанимать грузчиков для подъема?
+            <svg class="question-list__question-icon" width="30" height="17" viewBox="0 0 30 17" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="question-list__question-path" d="M1 1.5L15 15.5L29 1.5" stroke="#2F2F51" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </summary>
           <p class="question-list__answer">Нет, команда мастеров все сами аккуратно доставят и внесут.</p>
         </details>
       </div>
@@ -446,60 +483,52 @@
 
       <div class="contacts-block">
 
-        <div class="contacts-block__left">
+        <div class="contacts-block__item">
 
           <div class="contacts-block__label">Бесплатная консультация:</div>
-          <div class="contacts-block__list contacts-list">
+          <div class="contacts-list contacts-block__list">
             <img class="contacts-list__icon" src="./img/contacts/phone.svg" alt="Телефон">
-            <div class="contacts-list__phone">
-              <a href="tel:8(4932)34-31-40" class="contacts-list__phone-item">8 (4932) 34 - 31 - 40</a>
-              <a href="tel:8(905)109-31-40" class="contacts-list__phone-item">8 (905) 109 - 31 - 40</a>
-            </div>
-            <img src="./img/contacts/address.svg" alt="Адрес" class="contacts-list__icon">
-            <div class="contacts-list__address">
-              <a href="https://yandex.ru/maps/5/ivanovo">г.
-                Иваново, ул. Генерала Хлебникова, д.54, оф.303</a>
-            </div>
-            <img src="./img/contacts/email.svg" alt="Почта" class="contacts-list__icon">
-            <div class="contact-list__email">
-              <a class="contact-list__email-link" href="mailto:okna@haus.ru">okna@haus.ru</a>
-            </div>
+            <a class="contacts-list__phone" href="tel:8(4932)34-31-40">8 (4932) 34 - 31 - 40</a>
+            <a class="contacts-list__phone" href="tel:8(905)109-31-40">8 (905) 109 - 31 - 40</a>
+            <img class="contacts-list__icon" src="./img/contacts/address.svg" alt="Адрес">
+            <a class="contacts-list__address" href="https://yandex.ru/maps/-/CCUNRJu-CB">г.
+              Иваново, ул. Генерала Хлебникова, д.54, оф.303</a>
+            <img class="contacts-list__icon" src="./img/contacts/email.svg" alt="Почта">
+            <a class="contacts-list__email" href="mailto:okna@haus.ru">okna@haus.ru</a>
           </div>
 
-          <div class="contacts-block__social-network">
+          <div class="contacts-block__description">
             <div class="contacts-block__slogan">
               <p class="contacts-block__slogan-text">Установку должны выполнять только эксперты. Нам доверяют сотни
                 семей. Узнайте поробнее, какие решения
                 вам
                 подходят. Вы можете приобрести недорогие товары при гарантированно высоком качестве.
               </p>
-              <div class="social-network contacts-block__slogan-icons">
-                <a class="social-network__link link_shadow" href="https://www.vk.com/" target="_blank">
-                  <img src="./img/contacts/vk.svg" alt="Вк" class="social-network__icon">
+              <div class="social-media contacts-block__social">
+                <a class="social-media__link" href="https://www.vk.com/" target="_blank">
+                  <img src="./img/contacts/vk.svg" alt="Вк" class="social-media__icon">
                 </a>
-                <a class="social-network__link link_shadow" href="https://www.facebook.com/" target="_blank">
+                <a class="social-media__link" href="https://www.facebook.com/" target="_blank">
                   <img src="./img/contacts/facebook.svg" alt="Facebook"
-                    class="social-network__icon social-network__icon_size">
+                    class="social-media__icon social-media__icon_size">
                 </a>
-                <a class="social-network__link link_shadow" href="https://www.instagram.com/" target="_blank">
-                  <img src="./img/contacts/instagram.svg" alt="Инстаграм" class="social-network__icon">
+                <a class="social-media__link" href="https://www.instagram.com/" target="_blank">
+                  <img src="./img/contacts/instagram.svg" alt="Инстаграм" class="social-media__icon">
                 </a>
-                <a class="social-network__link link_shadow" href="https://telegram.org/" target="_blank">
-                  <img src="./img/contacts/telegram.svg" alt="Телеграм" class="social-network__icon">
+                <a class="social-media__link" href="https://telegram.org/" target="_blank">
+                  <img src="./img/contacts/telegram.svg" alt="Телеграм" class="social-media__icon">
                 </a>
-                <a class="social-network__link link_shadow" href="https://www.youtube.com/" target="_blank">
-                  <img src="./img/contacts/youtube.svg" alt="Youtube" class="social-network__icon">
+                <a class="social-media__link" href="https://www.youtube.com/" target="_blank">
+                  <img src="./img/contacts/youtube.svg" alt="Youtube" class="social-media__icon">
                 </a>
-                <a class="social-network__link link_shadow" href="https://ok.ru/" target="_blank">
-                  <img src="./img/contacts/ok.svg" alt="Одноклассники" class="social-network__icon">
+                <a class="social-media__link" href="https://ok.ru/" target="_blank">
+                  <img src="./img/contacts/ok.svg" alt="Одноклассники" class="social-media__icon">
                 </a>
               </div>
             </div>
-            <img src="./img/contacts/workers.png" alt="Рабочие" class="contacts-block__img">
+            <img src="./img/contacts/workers.png" alt="Рабочие" class="contacts-block__slogan-img">
           </div>
         </div>
-
-
 
         <form class="order-form contacts-form contacts-block__form" id="feedback">
           <div class="order-form__inner contacts-form__inner">
@@ -513,11 +542,12 @@
               name="feedback"></textarea>
 
 
-            <div class="checkbox ">
-              <input type="checkbox" class="checkbox__mark" id="checkbox_feedback">
+            <div class="checkbox contacts-form__check">
+              <input type="checkbox" class="checkbox__mark contacts-form__check-mark" id="checkbox-feedback">
 
-              <label class="checkbox__label" for="checkbox_feedback">
-                Я согласен(на) на обработку <a class="checkbox__link" href="#">персональных данных</a></label>
+              <label class="checkbox__label contacts-form__check-label" for="checkbox-feedback">
+                Я согласен(на) на обработку <a class="checkbox__link contacts-form__check-link" href="#">персональных
+                  данных</a></label>
             </div>
           </div>
           <button class="order-form__btn contacts-form__btn button_hover" type="submit" form="feedback">Отправить
@@ -531,7 +561,7 @@
     <div class="container">
       <div class="footer-box">
         <div class="footer-box__left">
-          <img class="footer-box__logo" src="./img/footer/logo.svg" alt="">
+          <img class="footer-box__logo" src="./img/footer/logo.svg" alt="Логотип">
           <span class="footer-box__copyright">&copy; ООО “Окна Хаус”, 2011 - 2022</span>
         </div>
 
