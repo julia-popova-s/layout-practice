@@ -14,13 +14,14 @@
 
     @media screen and (max-width: $max-width-xl) {
       display: block;
-      width: 75%;
+      width: 68%;
       margin-bottom: 23px;
     }
 
     @media screen and (max-width: $max-width-m) {
-      width: 75%;
+      width: 68%;
       margin-bottom: 23px;
+      padding-left: 0;
     }
 
     @media screen and (max-width: 920px) {
@@ -57,6 +58,7 @@
 
       @media screen and (max-width: $max-width-m) {
         z-index: -1;
+        right: -6px;
       }
     }
   }

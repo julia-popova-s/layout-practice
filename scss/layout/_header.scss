@@ -51,19 +51,16 @@
 }
 
 
-.header__nav {
-  margin-left: 44px;
-  margin-right: 60px;
-}
-
 .navigation {
   width: 100%;
+  padding: 0 60px 0 44px;
 
   &__menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 100%;
+
 
     &-link {
 
@@ -217,7 +214,6 @@
     top: 97px;
     border-radius: 0 0 $border-rad * 2 $border-rad * 2;
     padding: 20px;
-    // background-image: linear-gradient(90.45deg, #F2F2F2 47.56%, rgba(255, 255, 255, 0) 98.81%);
     background-color: #F2F2F2;
     transition: all $delay-03 linear;
   }
