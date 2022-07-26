@@ -3,5 +3,6 @@
     "editor.guides.bracketPairs": true,
     "editor.bracketPairColorization.enabled": true,
     "prettier.endOfLine": "auto",
-    "prettier.tabWidth": 2
+    "prettier.tabWidth": 2,
+    "liveServer.settings.port": 5501
 }
