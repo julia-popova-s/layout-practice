@@ -1,0 +1,70 @@
+  .schtandart-block {
+    background-image: url('../img/schtandart/bg-schtandart.png');
+    background-repeat: no-repeat;
+    border-radius: $border-rad;
+    padding-top: 36px;
+    margin-bottom: 56px;
+    height: 436px;
+
+
+    @media screen and (max-width: $max-width-m) {
+      background-image: url('../img/schtandart/bg-screen-m.jpg');
+      margin-bottom: 29px;
+      min-height: 679px;
+    }
+
+    &__logo {
+      text-align: center;
+      margin-bottom: 47px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    &__item {
+      width: 20%;
+      height: auto;
+      text-align: center;
+      margin-bottom: 60px;
+
+      @media screen and (max-width: $max-width-m) {
+        width: 27%;
+      }
+    }
+
+    &__img {
+      height: 97px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 36px;
+    }
+
+    &__text {
+      @include fontSetContent(400, 16px, 19px, $white);
+      padding-left: 10%;
+      padding-right: 10%;
+      // max-width: 196px;
+      // margin: 0 auto;
+    }
+  }
+
+
+  .schtandart-block {
+
+    &__btn {
+      display: block;
+      width: 256px;
+      height: 55px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      @include fontSetContent(700, 16px, 19px, $white);
+      padding-left: 22px;
+    }
+  }

@@ -1,0 +1,237 @@
+.contacts__title {
+  margin-bottom: 59px;
+}
+
+.contacts-block {
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 55%;
+    padding-left: 55px;
+
+
+    @media screen and (max-width: $max-width-xl) {
+      display: block;
+      width: 68%;
+      margin-bottom: 23px;
+    }
+
+    @media screen and (max-width: $max-width-m) {
+      width: 68%;
+      margin-bottom: 23px;
+      padding-left: 0;
+    }
+
+    @media screen and (max-width: 920px) {
+      width: 100%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 14px;
+    padding-left: 5px;
+    @include fontSetContent(700, 18px, 21px, $color-text);
+  }
+
+  &__description {
+    height: 365px;
+    position: relative;
+    max-width: 655px;
+
+  }
+
+  &__slogan {
+    max-width: 228px;
+
+    &-text {
+      margin-bottom: 30px;
+      @include fontSetContent(400, 16px, 22px, $color-text);
+    }
+
+    &-img {
+      position: absolute;
+      z-index: 1;
+      top: 0px;
+      right: -15px;
+
+      @media screen and (max-width: $max-width-m) {
+        z-index: -1;
+        right: -6px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1271px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: $max-width-m) {
+    justify-content: center;
+  }
+}
+
+//socail-media
+
+.social-media {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  &__link {
+    transition: box-shadow $delay-05 linear;
+
+    &:hover {
+      box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+      transition: box-shadow $delay-05 linear;
+    }
+  }
+}
+
+
+//form
+
+.contacts-form {
+
+  width: 512px;
+  height: 564px;
+  margin-bottom: 26px;
+
+  &__inner {
+    padding: 55px 57px 0 60px;
+    margin-bottom: 28px;
+  }
+
+  &__label {
+    @include fontSetContent(700, 24px, 28px, $color-text);
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    width: 395px;
+    height: 52px;
+    margin-bottom: 21px;
+    @include fontSetContent(400, 16px, 19px, $color-placeholder);
+  }
+
+  &__feedback {
+    resize: none;
+    border: none;
+    width: 395px;
+    height: 134px;
+    font-family: 'Roboto', sans-serif;
+    @include fontSetContent(400, 16px, 19px, $color-placeholder);
+    padding: 17px 0 0 17px;
+    margin-bottom: 14px;
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+
+  @media screen and (max-width: $max-width-xl) {
+    display: block;
+  }
+
+  @media screen and (max-width: $max-width-m) {
+    display: block;
+  }
+}
+
+//checkbox
+.contacts-form__check {
+  justify-content: start;
+
+  &-label {
+    @include fontSetContent(400, 14px, 16px, $color-text);
+    padding: 6px 0px 6px 12px;
+  }
+
+  &-link {
+    font-weight: 700;
+    color: $color-primary;
+    text-decoration: underline transparent;
+    transition: text-decoration $delay-03 ease-out;
+
+    &:hover {
+      text-decoration: underline;
+      transition: text-decoration $delay-03 ease-out;
+    }
+  }
+
+  .contacts-form__check-mark:checked+.contacts-form__check-label::after {
+    content: url('../img/contacts/vector.svg');
+    top: 5px;
+  }
+}
+
+//button
+.contacts-form__btn {
+  width: 258px;
+  height: 52px;
+  background-color: $color-text;
+  margin-bottom: 0;
+  @include fontSetContent(700, 16px, 19px, $white);
+
+}
+
+.contacts-block__list {
+  margin-bottom: 58px;
+}
+
+//contacts
+.contacts-list {
+  max-width: 552px;
+  display: grid;
+  align-items: start;
+  grid-auto-rows: auto;
+  grid-template-columns: 52px 2fr 2fr;
+  grid-template-rows: 81px 38px 22px;
+  grid-auto-rows: auto;
+
+  &__icon {
+    height: auto;
+  }
+
+  &__phone,
+  &__phone:hover,
+  &__address,
+  &__address:hover,
+  &__email,
+  &__email:hover {
+    transition: text-decoration $delay-03 ease-out;
+  }
+
+  &__phone,
+  &__address,
+  &__email {
+    text-decoration: underline transparent;
+  }
+
+  &__phone {
+    @include fontSetContent(700, 22px, 36px, $black);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__address {
+    @include fontSetContent(400, 18px, 21px, $black);
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__email {
+    @include fontSetContent(400, 18px, 21px, $black);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

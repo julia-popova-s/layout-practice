@@ -1,0 +1,7 @@
+.title-sections {
+  text-align: center;
+
+  &__link {
+    @include fontSetContent(700, 24px, 28px, $color-text);
+  }
+}

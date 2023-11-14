@@ -1,0 +1,58 @@
+.order-form {
+  width: 406px;
+  height: 428px;
+  background-color: $white;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  transition: all $delay-03 linear;
+
+  &:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all $delay-03 linear;
+  }
+
+  &__inner {
+    padding: 43px 43px 24px 40px;
+  }
+
+
+  &__title {
+    margin-bottom: 27px;
+    @include fontSetContent(700, 18px, 21px, $color-text);
+  }
+
+  &__input {
+    width: 323px;
+    height: 40px;
+    padding-left: 16px;
+    margin-bottom: 15px;
+    border-radius: $border-rad;
+    background-color: $color-input;
+    @include fontSetContent(400, 14px, 16px, $color-placeholder);
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+
+  &__btn {
+    background-color: $color-primary;
+    width: 199px;
+    height: 55px;
+    border-radius: $border-rad;
+    margin-bottom: 65px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    @include fontSetContent(700, 14px, 16px, $white);
+  }
+}
+
+.input_border {
+  transition: all $delay-03 linear;
+
+  &:focus {
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: all $delay-03 linear;
+  }
+}

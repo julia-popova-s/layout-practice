@@ -1,0 +1,84 @@
+.services {
+  padding-top: 68px;
+  padding-bottom: 103px;
+  background-color: $color-back;
+
+  @media screen and (max-width: $max-width-m) {
+    padding-bottom: 0;
+    padding-top: 47px;
+  }
+
+  &__title {
+    margin-bottom: 42px;
+
+    @media screen and (max-width: $max-width-m) {
+      margin-bottom: 29px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  @include fontSetContent(400, 16px, 19px, $color-text);
+
+  &__item {
+    width: 49.5%;
+    height: 268px;
+    margin-bottom: 10px;
+    border-radius: $border-rad;
+    padding: 55px 0 38px 50px;
+    overflow: hidden;
+    transition: box-shadow $delay-03 ease-out;
+
+    &:hover {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      transition: box-shadow $delay-03 ease-out;
+    }
+
+    &_windows {
+      background-image: url('../img/services/windows.png');
+    }
+
+    &_balcony {
+      background-image: url('../img/services/balcony.png');
+      background-position: 54% 30%;
+    }
+
+    &_houses {
+      background-image: url('../img/services/houses.png');
+    }
+
+    &_corporate {
+      background-image: url('../img/services/corporate.png');
+    }
+
+    @media screen and (max-width: $max-width-m) {
+      min-width: 67%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 38px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    margin-bottom: 25px;
+
+    &-label {
+      @include fontSetContent(700, 24px, 28px, $color-text);
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+
+  &__text {
+    max-width: 303px;
+  }
+}

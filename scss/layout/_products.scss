@@ -1,0 +1,140 @@
+.products__title {
+  margin-bottom: 42px;
+}
+
+.products-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 5px;
+
+  &__item {
+    text-align-last: center;
+    height: 100%;
+  }
+
+  &__link {
+    padding: 8px 26px 10px 26px;
+    background-color: transparent;
+    border-radius: $border-rad;
+    @include fontSetContent(400, 18px, 21px, $color-text);
+    letter-spacing: normal;
+    transition: all $delay-04 ease-out;
+
+    &:hover {
+      background-color: $color-primary;
+      border-radius: $border-rad;
+      color: $white;
+      text-shadow: 0 0 .85px #fff, 0 0 .85px #fff;
+      transition: all $delay-04 ease-out;
+    }
+  }
+}
+
+.products__menu {
+  margin-bottom: 37px;
+}
+
+.products-list {
+  max-width: 1145px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-radius: $border-rad;
+  background-color: $white;
+
+  &__item {
+    width: 49.5%;
+    max-height: 100%;
+
+    &-text {
+      padding: 74px 0 52px 35px;
+    }
+
+    &-left {
+      background-image: url('../img/products/renau.png');
+      background-repeat: no-repeat;
+      border-radius: $border-rad;
+
+      @media screen and (max-width: $max-width-m) {
+        background-image: url('../img/products/renau-screen-m.jpg');
+        width: 45.9%;
+      }
+
+      @media screen and (max-width: 920px) {
+        background-image: url('../img/products/renau.png');
+        width: 70%;
+        background-position: 50% 0;
+        height: 461px;
+      }
+    }
+
+    &-right {
+
+
+      @media screen and (max-width: $max-width-m) {
+        width: 54.1%;
+      }
+
+      @media screen and (max-width: 920px) {
+        width: 70%;
+        background-color: white;
+      }
+    }
+
+    @media screen and (max-width: 920px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    @include fontSetContent(700, 36px, 42px, $color-primary);
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    width: 73%;
+    @include fontSetContent(300, 18px, 21px, $black);
+    margin-bottom: 30px;
+
+    @media screen and (max-width: $max-width-m) {
+      width: 95%;
+    }
+  }
+
+  &__features {
+
+    &-item {
+      display: flex;
+      align-items: baseline;
+      @include fontSetContent(400, 18px, 40px, $black);
+      white-space: nowrap;
+    }
+
+    &-border {
+      flex-grow: 1;
+      border-bottom: 2px dotted $color-dot;
+    }
+
+    &-value {
+      display: block;
+      min-width: 30%;
+      @include fontSetContent(700, 18px, 40px, $color-text);
+
+      @media screen and (max-width: $max-width-m) {
+        min-width: 26%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    background-color: $color-back;
+  }
+}
+
+.products__block {
+  margin-bottom: 54px;
+}

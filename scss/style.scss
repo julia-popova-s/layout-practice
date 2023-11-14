@@ -1,0 +1,23 @@
+//base
+@import './base/variables';
+@import './base/base';
+
+//components
+@import './components/checkbox';
+@import './components/button';
+@import './components/title-sections';
+@import './components/form';
+
+
+//layout
+@import './layout/header';
+@import './layout/main-block';
+@import './layout/services';
+@import './layout/products';
+@import './layout/schtandart';
+@import './layout/about-company';
+@import './layout/advantages';
+@import './layout/portfolio';
+@import './layout/question';
+@import './layout/contacts';
+@import './layout/footer';
