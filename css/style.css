@@ -146,9 +146,6 @@ body {
 .order-form__input::-moz-placeholder {
   color: #424268;
 }
-.order-form__input:-ms-input-placeholder {
-  color: #424268;
-}
 .order-form__input::placeholder {
   color: #424268;
 }
@@ -337,7 +334,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .tablet-menu__icon::after,
-.tablet-menu__icon::before {
+  .tablet-menu__icon::before {
     content: "";
     display: block;
     position: absolute;
@@ -388,7 +385,7 @@ body {
 
 @media screen and (max-width: 992px) {
   .tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon::before,
-.tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon::after {
+  .tablet-menu__checkbox:checked ~ .tablet-menu__btn .tablet-menu__icon::after {
     top: 0;
   }
 }
@@ -1226,9 +1223,6 @@ body {
   margin-bottom: 14px;
 }
 .contacts-form__feedback::-moz-placeholder {
-  color: #424268;
-}
-.contacts-form__feedback:-ms-input-placeholder {
   color: #424268;
 }
 .contacts-form__feedback::placeholder {
